@@ -1,0 +1,1031 @@
+﻿
+
+<!DOCTYPE html>
+<html lang="en" class="full-height">
+<head>
+
+
+
+
+<!--css code for making an button on an image-->
+
+
+
+<style>
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+}
+
+.container .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    color: black;
+    font-size: 16px;
+    padding: 16px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.container .btn:hover {
+    background-color: black;
+    color: white;
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+	<title>CLIICKERS | A PROJECT INITIATIVE BY </title>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- Bootstrap core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Material Design Bootstrap -->
+	<link href="css/mdb.min.css" rel="stylesheet">
+
+	<!-- Your custom styles (optional) -->
+	<!--link href="http://www.dei.ac.in/dei/tedxdei/css/style.css" rel="stylesheet"-->
+
+
+		<!-- Your custom styles (optional) -->
+	<link href="http://www.dei.ac.in/dei/clickers/css/style.css" rel="stylesheet">
+
+
+	<style>
+        @media (max-width: 740px) {
+            .full-height,
+            .full-height body,
+            .full-height header,
+            .full-height header .view {
+                height: 700px; 
+            } 
+        }
+    </style>
+	<style rel="stylesheet">
+        /* TEMPLATE STYLES */
+
+        /* Necessary for full page carousel*/
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        /* Navigation*/
+
+        .navbar {
+            background-color: transparent;
+        }
+
+        .top-nav-collapse {
+            background-color: #929FBA;
+        }
+
+        footer.page-footer {
+            background-color: #929FBA;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .navbar {
+                background-color: #929FBA;
+            }
+             .shield{
+                width:120%;
+            }
+	.r{
+
+	text-align:center;
+}
+		.cal{
+margin-top:60px;
+        }
+        }
+        .scrolling-navbar {
+            -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+            -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+            transition: background .5s ease-in-out, padding .5s ease-in-out;
+        }
+
+        /* Carousel*/
+
+        .carousel {
+            height: 50%;
+            width: 800px;
+        }
+        
+
+        @media (max-width: 776px) {
+            .carousel {
+                height: 800%;
+            }
+           
+            
+        }
+
+        .carousel-item,
+        .active {
+            width: 800px;
+        }
+
+        .carousel-inner {
+            height: 100%;
+        }
+
+        /*Caption*/
+
+        .flex-center {
+            color: #fff;
+        }
+
+        .navbar .btn-group .dropdown-menu a:hover {
+            color: green !important;
+        }
+
+        .navbar .btn-group .dropdown-menu a:active {
+            color: #fff !important;
+        }
+
+.r{
+
+	text-align:centre;
+}
+    </style>
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+
+
+
+
+
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+</style>
+
+
+<!-- This code below is for the search button on the top left-->
+<style> 
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 100%;
+}
+</style>
+
+
+
+<style> 
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+</style>
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+</style>
+
+
+</head>
+<body>
+
+
+
+<div class="navbar">
+  <a href="#Home">Home</a>
+  <a href="#Glimpse">Glimpse</a>
+  <div class="dropdown">
+    <button class="dropbtn">More 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="../NewSignUp.html">Sign Up</a>
+      <a href="../Leave_message.html">Message</a>
+      <a href="../login.html">Log In</a>
+    </div>
+  </div> 
+</div>
+
+
+
+<!--div><input type="button" value="Sign Up"><a href="../NewSignUp.html">Sign Up</a></div>
+<div><input type="button" value="Sign Up 3"><a href="../signup3.html">Sign Up</a></div>
+
+<div><input type="button" value="Message"><a href="../Leave_message.html">Leave Message</a></div>
+
+
+
+<div><input type="button" value="Sign Up 2"><a href="">Sign Up</a></div>
+<div><input type="button" value="Login"><a href="../login.html">Log In</a></div-->
+
+
+<form>
+  <input type="text" name="search" placeholder="Search..">
+</form>
+   
+<body class="black-skin team">
+
+<!--body style="background-color:black;"-->
+
+	<!--Navigation & Intro-->
+	<header>
+
+		<!-- Navbar -->
+		<nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+		    <!--div class="container">
+		        <a class="navbar-brand" href="#" style='width:50%'><img src='ManU.jpg' style='width:100%;height:700px;' class=''/></a-->
+
+
+
+<div class="container">
+  <a class="navbar-brand" href="#" style='width:100%'><img src="ManU.jpg"  style="width:361%;height:700px;" class=''/></a>
+  <!--button class="btn">Button</button-->
+</div>
+
+		       <ul class="navbar-nav mr-auto smooth-scroll">
+		                <li class="nav-item">
+							<a class="nav-link" href="#Home" data-offset="200">Home <span class="sr-only">(current)</span></a>
+						</li>
+<li class="nav-item">
+							<a class="nav-link" href="#About Clickers" data-offset="150">About Clickers</a>
+						</li>						
+<li class="nav-item">
+							<a class="nav-link" href="#Team Members" data-offset="250">Team Members</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#Glimpse" data-offset="150">Glimpse</a>
+						</li>
+						
+						
+		            </ul>
+		            <!-- Social Icon  -->
+		            <ul class="navbar-nav nav-flex-icons">
+		                
+						 <li class="nav-item">
+		                    <a class="nav-link" href="mailto:baakash1998@gmail.com"><i class="fa fa-envelope light-green-text-2"></i></a>
+		                </li>
+		            </ul>
+		        </div>
+		    </div>
+		</nav>
+			
+
+
+
+
+
+
+
+
+
+
+<h2 style="text-align:center">Slideshow Gallery</h2>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="infi.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="bat.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="logo.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="mj1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="r2.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="n2.jpg" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="infi.jpg" style="width:100%" onclick="currentSlide(1)" alt="Necessity and Infinity">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="bat.jpg" style="width:100%" onclick="currentSlide(2)" alt="The night is here again and so is BATMAN">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="logo.jpg" style="width:100%" onclick="currentSlide(3)" alt="Beauty found its' way back to me">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="mj1.jpg" style="width:100%" onclick="currentSlide(4)" alt="Jackson is his time.">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="r2.jpg" style="width:100%" onclick="currentSlide(5)" alt="Ronaldo is Back">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="n2.jpg" style="width:100%" onclick="currentSlide(6)" alt="Neymar Rises">
+    </div>
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<main>
+			<div class='white' style=''>
+	
+			<div class='cal' style='padding-top:5%;padding-bottom:5%;'id='Home'>
+
+    <div class="carousel-inner" role="listbox">
+        <!--First slide-->
+        <div class="carousel-item active">
+            <img style='width:167%;height:700px; 'class="" src="bat.jpg" >
+        </div>
+        <!--/First slide-->
+        <!--Second slide-->
+        <div class="carousel-item">
+            <img style='width:167%;height:700px; 'class="" src="w6.jpg" >
+        </div>
+        <!--/Second slide-->
+        <!--Third slide-->
+       
+        <!--/Third slide-->
+    </div>
+    <!--/.Slides-->
+    <!--Controls-->
+    <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+    <!--/.Controls-->
+</div>
+<!--/.Carousel Wrapper-->
+				
+		</div>
+		
+				<!--div class='container' style=''>
+			
+					
+<div class="jumbotron z-depth-0" >
+    <div class='col-md-12'><img src='logo.jpg' class='logo'></div>
+    <div class='col-md-12'><h1 class="h1-responsive"><span class='red-text'> Excellence</span> with <span class='red-text'>Relevance</span></h1></div>
+       <br><br>
+    <hr class="my-3">
+    <div class='col-md-12'>
+     
+  <</div-->
+
+<!--div class='row' style=''>
+<div class='col-md-6' style='padding:12px;'>
+<div class="card card-body grey darken-4">
+    <h4 class="card-title white-text">Venue</h4>
+    <h5 class="white-text ">Dayalbagh Educational Institute, Agra, India. </h5>
+    <div class="flex-row white-text">       
+    </div>
+</div>
+</div>
+		<div class='col-md-6' style='padding:12px;'>
+<div class="card card-body red ">
+    <h4 class="card-title white-text" >Date</h4>
+    <h5 class="  white-text">Saturday, March 10, 2018.</h5>
+    <div class="flex-row ">       
+    </div>
+</div>
+</div>
+</div>
+		
+				</div>
+				</div-->
+		
+
+		
+	
+	<!--/Navigation & Intro-->
+
+	<!--Main layout-->
+
+
+		<!-- First container -->
+		<!--div class="container"-->
+			<!--Section: Blog v.1-->
+
+			<!-- /.Section About -->
+
+	
+		<!-- /.First container -->
+
+		<!-- streak-->
+
+
+		<!-- /.streak -->
+   <!--br><br-->
+	<!--hr class="between-sections">
+<section id="About" class="section py-4"-->
+
+				<!-- Section title -->
+				<!--h1 class="section-heading my-5 mb-4 font-bold wow fadeIn">About <span class='red-text'>TED</span></h1-->
+
+				<!-- First row -->
+				<!--div class="row mb-5 wow fadeIn" data-wow-delay="0.2s"-->
+					
+					<!-- Place for photo -->
+					
+<!--div class='col-md-2'></div-->
+					<!-- Text content -->
+					<!--div class="col-lg-8 mb-2">
+						<p style='text-align: justify;text-justify: inter-word;'>TED is a nonprofit organization devoted to Ideas Worth Spreading. Started as a four-day conference in California 30 years ago, TED has grown to support its mission with multiple initiatives. The two annual TED Conferences invite the world's leading thinkers and doers to speak for 18 minutes or less. Many of these talks are then made available, free, at TED.com. TED speakers have included Bill Gates, Jane Goodall, Elizabeth Gilbert, Sir Richard Branson, Nandan Nilekani, Philippe Starck, Ngozi Okonjo-Iweala, Sal Khan and Daniel Kahneman.
+<br>The annual TED Conference takes place each spring in Vancouver, British Columbia. TED's media initiatives include TED.com, where new TED Talks are posted daily; the Open Translation Project, which provides subtitles and interactive transcripts as well as translations from volunteers worldwide; the educational initiative TED-Ed. TED has established the annual TED Prize, where exceptional individuals with a wish to change the world get help translating their wishes into action; TEDx, which supports individuals or groups in hosting local, self- organized TED-style events around the world, and the TED Fellows program, helping world-changing innovators from around the globe to amplify the impact of their remarkable projects and activities.</p>
+				</div-->
+				<!-- /.First row -->
+
+			<!--/section-->
+		<!-- Second container -->
+	<section id="About Clickers" class="section py-4">
+
+				<!-- Section title -->
+				<h1 class="section-heading my-5 mb-4 font-bold wow fadeIn">About <span class='red-text'>Clickers</span></h1>
+
+				<!-- First row -->
+				<div class="row mb-5 wow fadeIn" data-wow-delay="0.2s">
+					
+					<!-- Place for photo -->
+					
+<div class='col-md-2'></div>
+					<!-- Text content -->
+					<div class="col-lg-8 mb-2">
+						<p style='text-align: justify;text-justify: inter-word;'>Clickers is an project initiative taken by the students of the engineering faculty: Aakash Baranwal, Ansh Agarwal and Apar Singhal.</p>
+						<p style='text-align: justify;text-justify: inter-word;'>This project is all about an interaction between a student and a teacher.
+						So how does it works? : A teacher asks an Multiple Choice Question using the projector on the screen. Every student of the class 
+						will have his or her own remote which would have a Unique Identification Code to identify the owner of the remote. The student 
+						may click on any one of the four buttons which are actually the asnwer options marked as A, B, C and D.
+						<br>The beauty of this project is that not only the answer response of the student is stored but also the attendence as well as
+						a graph of the week's performance would be shown to the student so that they may assess themselves.</p></div>
+
+				</div>
+				<!-- /.First row -->
+
+			</section>
+            
+
+
+
+
+
+
+
+
+
+
+
+	<hr class="between-sections">
+			<!-- Second section -->
+			<section  class="section team-section pt-3">
+				
+				<h1 class="section-heading mt-5 pt-4 font-bold wow fadeIn">Team Members</h1>
+               <div id="Team Members">
+				<!--h2 class="section-description wow fadeIn" data-wow-delay="0.2s">Hosts</h2-->
+
+				<div class="row text-center wow fadeIn" data-wow-delay="0.4s">
+
+
+
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="lio.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Ansh Agarwal</h2>
+        <p class="title">Co-Founder</p>
+        <p>Hi! I am Ansh. Describe me? Well You surely cannot.</p>
+        <p>anshagarwal@yahoo.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="ron2.jpg" alt="Aakash" style="width:100%">
+      <div class="container">
+        <h2>Aakash Baranwal</h2>
+        <p class="title">Co-Founder</p>
+        <p>Hey my fellow buddies!. Name is Aakash Baranwal and my work is my identity.</p>
+        <p>baakash1998@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="column">
+    <div class="card">
+      <img src="n1.jpg" alt="Apar" style="width:100%">
+      <div class="container">
+        <h2>Apar Singhal</h2>
+        <p class="title">Co-Founder</p>
+        <p>Hey everyone! My name is Apar Singhal from Dayalbagh Educational Institute, Faculty of Engineering.</p>
+        <p>aparsinghal1998@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+	
+
+					<!--First column-->
+					<!--div class="col-md-4" style='margin-bottom:21px;'>
+						<div class="overlay hm-white-slight rounded z-depth-2 ">
+							<img style='width:80%;height:700px;'src="n2.jpg" class="z-depth-1 " class=''/ align="right" hspace="120">
+						</div>
+						</div>
+					<div class="col-md-4" style='margin-bottom:21px;'>
+						<div class="overlay hm-white-slight rounded z-depth-2">
+							<img style='width:80%;height:700px;'src="r2.jpg" class="z-depth-1 " class=''/ align="right" hspace="120">
+						</div>
+						</div>
+						<div class="col-md-4" style='margin-bottom:21px;'>
+						<div class="overlay hm-white-slight rounded z-depth-2">
+							<img style='width:80%;height:700px;'src="n1.jpg" class="z-depth-1 " class=''/ align="right" hspace="120">
+						</div-->
+
+
+
+
+
+<!--button style="background-color:blue;border:none;border-radius: 12px; position: fixed; padding: 10px 24px;font-size: 12px; text-align: center;margin: 10px;"> ABOUT </button-->
+					</div>
+					</div>
+					</div>
+					<hr class="between-sections" id="team-2">
+					
+
+	<!--hr class="between-sections"-->
+			<!-- Second section -->
+			<!--section  class="section team-section pt-3">
+				
+				<h1 class="section-heading mt-5 pt-4 font-bold wow fadeIn">Team Members</h1>
+               <div id="Team Members"-->
+				<!--h2 class="section-description wow fadeIn" data-wow-delay="0.2s">Hosts</h2-->
+
+				<!--div class="row text-center wow fadeIn" data-wow-delay="0.4s"-->
+
+
+
+
+
+				<div class='col-md-4 col-sm-0'></div>
+					</div>
+				</div-->
+				<hr class="between-sections">
+				 <div style='margin-top:3em;margin-bottom:3em;' id="team-3">
+				<h2 class="Glimpse of the Real Device and the whole Project" data-wow-delay="0.2s">Glimpse of the Real Device and the whole Project</h2>
+
+				<div class="row text-center wow fadeIn" data-wow-delay="0.4s">
+
+					<!--First column-->
+					<div class="col-md-4" style='margin-bottom:21px;'>
+						<div class="overlay hm-white-slight rounded z-depth-2">
+							<img style='width:80%;height:700px;'src="infi.jpg" class="z-depth-1 img-fluid" align="right" hspace="120">
+						</div>
+					</div>
+					<div class="col-md-4" style='margin-bottom:21px;'>
+						<div class=" overlay hm-white-slight rounded z-depth-2">
+							<img style='width:80%;height:700px;'src="mj1.jpg" class="z-depth-1 img-fluid" align="right" hspace="120">
+						</div>
+					</div>
+					<div class="col-md-4" style='margin-bottom:21px;'>
+						<div class=" overlay hm-white-slight rounded z-depth-2">
+							<img style='width:80%;height:700px;'src="logo.jpg" class="z-depth-1 img-fluid" align="right" hspace="120">
+						</div>
+					</div>
+					
+						  </div>
+					</div>
+
+			</section>
+			
+		<hr class="between-sections">
+			<!-- /.Second section -->
+<section class="py-4 text-center text-lg-left" id='Announcements'>
+
+    <!--Section heading-->
+    <h1 class="h1 font-bold text-center mb-5 pt-4">Videos of the Project</h1>
+    
+
+
+    <!--  In the code written below, we can post any youtube video here, so in future we shall also make an video of the working of the 
+    	model and shall post it here, in line number 521 in src we shall remove the given link and post the link of our 
+    	you tube video-->
+    <Grid column>
+<div class="col-lg-5 col-xl-5 pb-3">
+        <Featured image>
+        <div class="overlay hm-white-slight rounded z-depth-2">
+        <div class="embed-responsive embed-responsive-16by9">
+	<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/41vfzogPiH4?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+    </iframe></div>
+        <a>
+            <div class="mask"></div>
+        </a>
+        </div>
+    </div>
+    </div>
+</section>
+<!--Section: Blog v.1-->
+
+		<hr class="between-sections">
+			<!-- Section About -->
+			
+			
+
+	
+    
+	<!--Streak-->
+    </div>
+	<div class="container-fluid py-5" style=" ">
+      <div clas='row'>
+	  <div class="col-md-12 col-sm-12 text-center">
+	<p class=''>This Project <span class='red-text'>CLICKERS</span> is being developed by Aakash Baranwal, Ansh Agarwal and Apar Singhal</p>
+	  </div>
+	  </div> 
+    </div>
+    <!--/Streak-->
+
+	</main>
+	</Main layout>
+
+	<!--Scrollspy >
+	<div class="dotted-scrollspy clearfix d-none d-sm-block">
+		<ul class="nav smooth-scroll flex-column">
+			<li class="nav-item"><a class="nav-link" href="#Home"><span></span></a></li>
+			<li class="nav-item"><a class="nav-link" href="#About"><span></span></a></li>
+			<li class="nav-item"><a class="nav-link" href="#Lineup"><span></span></a></li>
+			<li class="nav-item"><a class="nav-link" href="#team-2"><span></span></a></li>
+			<li class="nav-item"><a class="nav-link" href="#Announcements"><span></span></a></li>
+		</ul>
+	</div-->
+
+	<!--SCRIPTS -->
+
+	<!-- JQuery -->
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+
+	<!-- Bootstrap tooltips -->
+	<script type="text/javascript" src="js/popper.min.js"></script>
+
+	<!-- Bootstrap core JavaScript -->
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+	<!-- MDB core JavaScript -->
+	<script type="text/javascript" src="js/mdb.min.js"></script>
+
+	<script>
+		// initialize scrollspy
+		$('body').scrollspy({
+			target: '.dotted-scrollspy'
+		});
+
+		// initialize lightbox
+		$(function () {
+			$("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
+		});
+
+		$('.navbar-collapse a').click(function(){
+            $(".navbar-collapse").collapse('hide');
+        });
+
+		/* WOW.js init */
+		new WOW().init();
+
+	</script>
+
+</body>
+</html>
