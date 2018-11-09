@@ -32,6 +32,10 @@
 
 
 
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
 
     <style>
         * {
@@ -162,12 +166,18 @@
             -moz-transform-style: preserve-3d;
             -ms-transform-style: preserve-3d;
             transform-style: preserve-3d;
+            position: left;
         }
 
             #spinner:hover {
-                -webkit-animation-play-state: paused;
-                animation-play-state: paused;
+                -webkit-animation-play-state: running;
+                animation-play-state: running;
             }
+
+        div.relative {
+            position: relative;
+            left: 350px;
+        }
     </style>
 
 
@@ -181,9 +191,6 @@
             box-shadow: inset 0 0 20px rgba(0,0,0,0.2);
         }
     </style>
-
-
-
 
 
 
@@ -467,6 +474,10 @@
 
 
 
+
+
+
+
 </head>
 <body>
 
@@ -496,7 +507,7 @@
     <h1 style="text-align:center">STUDENT EXCHANGE PROGRAM</h1>
 
 
-    <div id="stage" style="background: rgba(0,0,0,0.5);">
+    <div id="stage" style="background: rgba(0,0,0,0.5); width:50%">
         <p id="spinner" style="background: rgba(0,0,0,0.5);transition-delay:unset; text-align: center; position:center; font-size:20px ;color: #fff;">DAYALBAGH EDUCATIONAL INSTITUTE WELCOMES YOU</p>
 
 
@@ -511,135 +522,137 @@
 
         <div class="bg-text">
 
-            <h1 class="glow" style="font-size:50px">D GURU PRIYA</h1>
-            <h2 class="glow">FACULTY OF  SOCIAL SCIENCE</h2>
-            <h3 class="glow">DAYALBAGH EDUCATIONAL INSTITUTE (DEEMED UNIVERSITY)</h3>
+            <h1 style="font-size:3vw;" class="glow" style="font-size:50px">D GURU PRIYA</h1>
+            <h2 style="font-size:3vw;" class="glow">FACULTY OF  SOCIAL SCIENCE</h2>
+            <h3 style="font-size:3vw;" class="glow">DAYALBAGH EDUCATIONAL INSTITUTE (DEEMED UNIVERSITY)</h3>
         </div>
 
-        <div id="spinner" style="-webkit-transform-origin: 180px 0 0;">
-            <img style="-webkit-transform: rotateY(0deg) translateX(180px); padding: 0 0 0 0;" src="img/1394441747Dayalbagh Educational Institute.png" width="280px" height="260px" alt="">
-            <img style="-webkit-transform: rotateY(-72deg) translateX(180px); padding: 0 0 0 0;" src="img/hku.jpg" width="280px" height="260px" alt="">
-            <img style="-webkit-transform: rotateY(-216deg) translateX(180px); padding: 0 0 0 0;" src="img/1394441747Dayalbagh Educational Institute.png" width="280px" height="260px" alt="">
-            <img style="-webkit-transform: rotateY(-288deg) translateX(180px); padding: 0 0 0 0;" src="img/hku.jpg" width="280px" height="260px" alt="">
+        <div class="relative">
+            <div id="spinner" style="-webkit-transform-origin: 180px 0 0;">
+                <img style="-webkit-transform: rotateY(0deg) translateX(180px); padding: 0 0 0 0;" src="img/1394441747Dayalbagh Educational Institute.png" width="280px" height="260px" alt="">
+                <img style="-webkit-transform: rotateY(-72deg) translateX(180px); padding: 0 0 0 0;" src="img/hku.jpg" width="280px" height="260px" alt="">
+                <img style="-webkit-transform: rotateY(-216deg) translateX(180px); padding: 0 0 0 0;" src="img/1394441747Dayalbagh Educational Institute.png" width="280px" height="260px" alt="">
+                <img style="-webkit-transform: rotateY(-288deg) translateX(180px); padding: 0 0 0 0;" src="img/hku.jpg" width="280px" height="260px" alt="">
+            </div>
         </div>
-    </div>
+        </div>
 
-    <img src="img/D Guru Priya.jpg" style="width:20%;height:auto;margin:0 0 auto 70%" />
+        <img src="img/D Guru Priya.jpg" style="width:20%;height:auto;margin:0 0 0 0" />
 
-    <div class="container" style="background-image; width:100%; height:auto;position:center">
+        <div class="container" style="background-image; width:100%; height:auto;position:center">
 
-        <img style="width:100%;height:auto;position:center" src="img/REI2.jpg" />
-    </div>
-
-
-
-
-
-    <div align="center"><h1>INTRODUCTION</h1></div>
-
-    <p align="center">
-        I am Guru Priya meaning, 'Beloved of God' which reflects my deep love with my lord and I owe all to Him. I am a proud Dayalbagh product having
-        received all my education in Dayalbagh,<br />
-        the culture, values and ethos of this great institution are imbibed in my DNA. Though I am a student of Commerce and Management,
-        my grooming in this environment has inculcated an artistic temperament in me. I love to listen to great musicians, artists and poets.
-        Theatre resides in my heart and I relish playing Indian percussion instruments especially Tabla which I picked up at
-        tender age of 4 owing to my mother's vision. Her dedication propelled me to achieve laurels and I represented my university in inter university youth festivals.
-    </p>
-    <p align="center">
-        I am pursuing Graduation in Commerce with Integrated MBA. Unconventional as it may sound this cross-disciplinary curriculum design has enabled us to
-        identify our true interests and explore infinite<br />
-        intersection of various disciplines. Human Resource Management is my area of interest. I like to study behavioural aspects of human and <br />
-        develop more scientific methods for appraisal system and study organisational culture. I find value system and culture as my moral fibre and the<br />
-        strength of my character. After creating solid professional base, I fantasize seeing
-        myself back to this place and teaching children as I feel that teaching is the noblest profession since the<br /> inception of humanity
-        and I being indebted to my alma mater, want to give back something. As to define success that I seek to achieve I invoke<br />
-        Ralph Waldo Emerson: "To know even one life has breathed easier because you have lived. This is to have succeeded."
-    </p>
+            <img style="width:100%;height:auto;position:center" src="img/REI2.jpg" />
+        </div>
 
 
 
 
 
+        <div align="center"><h1>INTRODUCTION</h1></div>
+
+        <p align="center">
+            I am Guru Priya meaning, 'Beloved of God' which reflects my deep love with my lord and I owe all to Him. I am a proud Dayalbagh product having
+            received all my education in Dayalbagh,<br />
+            the culture, values and ethos of this great institution are imbibed in my DNA. Though I am a student of Commerce and Management,
+            my grooming in this environment has inculcated an artistic temperament in me. I love to listen to great musicians, artists and poets.
+            Theatre resides in my heart and I relish playing Indian percussion instruments especially Tabla which I picked up at
+            tender age of 4 owing to my mother's vision. Her dedication propelled me to achieve laurels and I represented my university in inter university youth festivals.
+        </p>
+        <p align="center">
+            I am pursuing Graduation in Commerce with Integrated MBA. Unconventional as it may sound this cross-disciplinary curriculum design has enabled us to
+            identify our true interests and explore infinite<br />
+            intersection of various disciplines. Human Resource Management is my area of interest. I like to study behavioural aspects of human and <br />
+            develop more scientific methods for appraisal system and study organisational culture. I find value system and culture as my moral fibre and the<br />
+            strength of my character. After creating solid professional base, I fantasize seeing
+            myself back to this place and teaching children as I feel that teaching is the noblest profession since the<br /> inception of humanity
+            and I being indebted to my alma mater, want to give back something. As to define success that I seek to achieve I invoke<br />
+            Ralph Waldo Emerson: "To know even one life has breathed easier because you have lived. This is to have succeeded."
+        </p>
 
 
-    <!--This code below is for the timeline view presented on the website-->
 
-    <div class="timeline">
-        <div class="container left">
-            <div class="content">
-                <h2>JULY 2018</h2>
-                <p>Freshman (1st) Year  in Faculty of Social Sciencs (MBA), Dayalbagh Educational Institute begins</p>
+
+
+
+
+        <!--This code below is for the timeline view presented on the website-->
+
+        <div class="timeline">
+            <div class="container left">
+                <div class="content">
+                    <h2>JULY 2018</h2>
+                    <p>Freshman (1st) Year  in Faculty of Social Sciencs (MBA), Dayalbagh Educational Institute begins</p>
+                </div>
+            </div>
+
+
+            <div class="container right">
+                <div class="content">
+                    <h2>JUNE 2018</h2>
+                    <p>DEI-HKU STUDENT EXCHANGE PROGRAM. A visit to Hong Kong University, Hong Kong.</p>
+                </div>
+            </div>
+
+
+
+            <div class="container left">
+                <div class="content">
+                    <h2>JULY 2017</h2>
+                    <p>Final (3rd) Year in Faculty of Commerce, Dayalbagh Educational Institute begins.</p>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="content">
+                    <h2>JULY 2016</h2>
+                    <p>Sophomore (2nd) Year in Faculty of Commerce, Dayalbagh Educational Institute begins.</p>
+                </div>
+            </div>
+
+
+            <div class="container left">
+                <div class="content">
+                    <h2>JULY 2015</h2>
+                    <p>Freshman (1st) Year in Faculty of Commerce, Dayalbagh Educational Institute begins.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!--End of timeline-->
+        <!--For the 3 Text boxes-->
+
+
+        <div class="column">
+            <div class="card">
+                <h3><b>Sports</b></h3>
+                <p>Badminton</p>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <h3><b>Hobbies</b></h3>
+                <p>Theatre Plays</p>
+                <p>Tabla</p>
+                <p>Creative Writing</p>
+                <p>Study of behavioural aspects of human </p>
+
             </div>
         </div>
 
 
-        <div class="container right">
-            <div class="content">
-                <h2>JUNE 2018</h2>
-                <p>DEI-HKU STUDENT EXCHANGE PROGRAM. A visit to Hong Kong University, Hong Kong.</p>
-            </div>
-        </div>
+        <footer class="footer">
+            <div class="copyright-section">
 
+                <div class="copytext">
+                    &copy; Aakash Baranwal. All rights reserved
 
-
-        <div class="container left">
-            <div class="content">
-                <h2>JULY 2017</h2>
-                <p>Final (3rd) Year in Faculty of Commerce, Dayalbagh Educational Institute begins.</p>
-            </div>
-        </div>
-        <div class="container right">
-            <div class="content">
-                <h2>JULY 2016</h2>
-                <p>Sophomore (2nd) Year in Faculty of Commerce, Dayalbagh Educational Institute begins.</p>
-            </div>
-        </div>
-
-
-        <div class="container left">
-            <div class="content">
-                <h2>JULY 2015</h2>
-                <p>Freshman (1st) Year in Faculty of Commerce, Dayalbagh Educational Institute begins.</p>
-            </div>
-        </div>
-
-    </div>
-
-    <!--End of timeline-->
-    <!--For the 3 Text boxes-->
-
-
-    <div class="column">
-        <div class="card">
-            <h3><b>Sports</b></h3>
-            <p>Badminton</p>
-        </div>
-    </div>
-
-    <div class="column">
-        <div class="card">
-            <h3><b>Hobbies</b></h3>
-            <p>Theatre Plays</p>
-            <p>Tabla</p>
-            <p>Creative Writing</p>
-            <p>Study of behavioural aspects of human </p>
-            
-        </div>
-    </div>
-
-
-    <footer class="footer">
-        <div class="copyright-section">
-
-            <div class="copytext">
-                &copy; Aakash Baranwal. All rights reserved
+                </div>
 
             </div>
-
-        </div>
-        <!-- .copyright-section -->
-    </footer>
-    <!-- .footer -->
+            <!-- .copyright-section -->
+        </footer>
+        <!-- .footer -->
 
 </body>
 </html>

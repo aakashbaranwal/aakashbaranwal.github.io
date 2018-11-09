@@ -32,6 +32,10 @@
 
 
 
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
 
     <style>
         * {
@@ -162,12 +166,18 @@
             -moz-transform-style: preserve-3d;
             -ms-transform-style: preserve-3d;
             transform-style: preserve-3d;
+            position: left;
         }
 
             #spinner:hover {
-                -webkit-animation-play-state: paused;
-                animation-play-state: paused;
+                -webkit-animation-play-state: running;
+                animation-play-state: running;
             }
+
+        div.relative {
+            position: relative;
+            left: 350px;
+        }
     </style>
 
 
@@ -181,9 +191,6 @@
             box-shadow: inset 0 0 20px rgba(0,0,0,0.2);
         }
     </style>
-
-
-
 
 
 
@@ -467,6 +474,7 @@
 
 
 
+
 </head>
 <body>
 
@@ -496,7 +504,7 @@
     <h1 style="text-align:center">STUDENT EXCHANGE PROGRAM</h1>
 
 
-    <div id="stage" style="background: rgba(0,0,0,0.5);">
+    <div id="stage" style="background: rgba(0,0,0,0.5); width:50%">
         <p id="spinner" style="background: rgba(0,0,0,0.5);transition-delay:unset; text-align: center; position:center; font-size:20px ;color: #fff;">DAYALBAGH EDUCATIONAL INSTITUTE WELCOMES YOU</p>
 
 
@@ -511,118 +519,120 @@
 
         <div class="bg-text">
 
-            <h1 class="glow" style="font-size:50px">ARSHITA SATSANGEE</h1>
-            <h2 class="glow">FACULTY OF  SOCIAL SCIENCE</h2>
-            <h3 class="glow">DAYALBAGH EDUCATIONAL INSTITUTE (DEEMED UNIVERSITY)</h3>
+            <h1 style="font-size:3vw;" class="glow" style="font-size:50px">ARSHITA SATSANGEE</h1>
+            <h2 style="font-size:3vw;" class="glow">FACULTY OF  SOCIAL SCIENCE</h2>
+            <h3 style="font-size:3vw;" class="glow">DAYALBAGH EDUCATIONAL INSTITUTE (DEEMED UNIVERSITY)</h3>
         </div>
 
-        <div id="spinner" style="-webkit-transform-origin: 180px 0 0;">
-            <img style="-webkit-transform: rotateY(0deg) translateX(180px); padding: 0 0 0 0;" src="img/1394441747Dayalbagh Educational Institute.png" width="280px" height="260px" alt="">
-            <img style="-webkit-transform: rotateY(-72deg) translateX(180px); padding: 0 0 0 0;" src="img/hku.jpg" width="280px" height="260px" alt="">
-            <img style="-webkit-transform: rotateY(-216deg) translateX(180px); padding: 0 0 0 0;" src="img/1394441747Dayalbagh Educational Institute.png" width="280px" height="260px" alt="">
-            <img style="-webkit-transform: rotateY(-288deg) translateX(180px); padding: 0 0 0 0;" src="img/hku.jpg" width="280px" height="260px" alt="">
+        <div class="relative">
+            <div id="spinner" style="-webkit-transform-origin: 180px 0 0;">
+                <img style="-webkit-transform: rotateY(0deg) translateX(180px); padding: 0 0 0 0;" src="img/1394441747Dayalbagh Educational Institute.png" width="280px" height="260px" alt="">
+                <img style="-webkit-transform: rotateY(-72deg) translateX(180px); padding: 0 0 0 0;" src="img/hku.jpg" width="280px" height="260px" alt="">
+                <img style="-webkit-transform: rotateY(-216deg) translateX(180px); padding: 0 0 0 0;" src="img/1394441747Dayalbagh Educational Institute.png" width="280px" height="260px" alt="">
+                <img style="-webkit-transform: rotateY(-288deg) translateX(180px); padding: 0 0 0 0;" src="img/hku.jpg" width="280px" height="260px" alt="">
+            </div>
+            </div>
         </div>
-    </div>
 
-    <img src="img/Arshita.jpg" style="width:20%;height:auto;margin:0 0 auto 70%" />
+        <img src="img/Arshita.jpg" style="width:20%;height:auto;margin:0 0 0 0" />
 
-    <div class="container" style="background-image; width:100%; height:auto;position:center">
+        <div class="container" style="background-image; width:100%; height:auto;position:center">
 
-        <img style="width:100%;height:auto;position:center" src="img/REI2.jpg" />
-    </div>
-
+            <img style="width:100%;height:auto;position:center" src="img/REI2.jpg" />
+        </div>
 
 
 
 
-    <div align="center"><h1>INTRODUCTION</h1></div>
 
-    <p align="center">
-        Introducing myself, I am Arshita Satsangee, a first year student pursuing my Major studies in Psychology and English from Dayalbagh Educational Institute, Agra, India.<br />
-        Being a national Table Tennis player and having an avid interest in various fields like adventure sports and travelling, my areas of interest also revolve <br />
-        around History, be it visiting historical monuments, reading historical books or watching Historical stage shows.For the next few years from now,
-        I have kept my options open considering getting into the field of Law or pursuing a Master's in psychology. <br />
-        The skill sets which I would like to acquire apart from excelling in academics are pottery-making and learning about the cultural diversities and cuisines.
-    </p>
-    <p align="center">
-        I am a backpacker and a gypsy soul looking to explore different landscapes. I live by the saying 'Carpe Diem'-Seize the Day (making the most of the day and most of life).<br />
-        The 3 precepts I live by are
-        Adhyayn ( ongoing learning and education).
-        Seva ( inculcating the spirit of selfless service and contributing to the community at large).
-        Vyayam ( a sound mind in a healthy body because only when we remain fit , we can serve others).
-    </p>
+        <div align="center"><h1>INTRODUCTION</h1></div>
 
+        <p align="center">
+            Introducing myself, I am Arshita Satsangee, a first year student pursuing my Major studies in Psychology and English from Dayalbagh Educational Institute, Agra, India.<br />
+            Being a national Table Tennis player and having an avid interest in various fields like adventure sports and travelling, my areas of interest also revolve <br />
+            around History, be it visiting historical monuments, reading historical books or watching Historical stage shows.For the next few years from now,
+            I have kept my options open considering getting into the field of Law or pursuing a Master's in psychology. <br />
+            The skill sets which I would like to acquire apart from excelling in academics are pottery-making and learning about the cultural diversities and cuisines.
+        </p>
+        <p align="center">
+            I am a backpacker and a gypsy soul looking to explore different landscapes. I live by the saying 'Carpe Diem'-Seize the Day (making the most of the day and most of life).<br />
+            The 3 precepts I live by are
+            Adhyayn ( ongoing learning and education).
+            Seva ( inculcating the spirit of selfless service and contributing to the community at large).
+            Vyayam ( a sound mind in a healthy body because only when we remain fit , we can serve others).
+        </p>
 
 
 
 
 
 
-    <!--This code below is for the timeline view presented on the website-->
 
-    <div class="timeline">
+        <!--This code below is for the timeline view presented on the website-->
 
-        <div class="container right">
-            <div class="content">
-                <h2>JULY  2018</h2>
-                <p>Sophomore (2nd) Year in Faculty of Social Science, Dayalbagh Educational Institute begins.</p>
+        <div class="timeline">
+
+            <div class="container right">
+                <div class="content">
+                    <h2>JULY  2018</h2>
+                    <p>Sophomore (2nd) Year in Faculty of Social Science, Dayalbagh Educational Institute begins.</p>
+                </div>
+            </div>
+
+
+
+            <div class="container left">
+                <div class="content">
+                    <h2>JUNE 2018</h2>
+                    <p>DEI-HKU STUDENT EXCHANGE PROGRAM. A visit to Hong Kong University, Hong Kong.</p>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="content">
+                    <h2>JULY 2017</h2>
+                    <p>Freshman (1st) Year in Faculty of Social Science, Dayalbagh Educational Institute begins.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!--End of timeline-->
+        <!--For the 2 Text boxes-->
+
+
+        <div class="column">
+            <div class="card">
+                <h3><b>Sports</b></h3>
+                <p>Table-Tennis</p>
+
             </div>
         </div>
 
 
 
-        <div class="container left">
-            <div class="content">
-                <h2>JUNE 2018</h2>
-                <p>DEI-HKU STUDENT EXCHANGE PROGRAM. A visit to Hong Kong University, Hong Kong.</p>
-            </div>
-        </div>
-        <div class="container right">
-            <div class="content">
-                <h2>JULY 2017</h2>
-                <p>Freshman (1st) Year in Faculty of Social Science, Dayalbagh Educational Institute begins.</p>
-            </div>
-        </div>
-
-    </div>
-
-    <!--End of timeline-->
-    <!--For the 2 Text boxes-->
-
-
-    <div class="column">
-        <div class="card">
-            <h3><b>Sports</b></h3>
-            <p>Table-Tennis</p>
-
-        </div>
-    </div>
-
-
-
-    <div class="column">
-        <div class="card">
-            <h3><b>Hobbies</b></h3>
-            <p>History</p>
-            <p>Travelling</p>
-            <p>Adventure Sports</p>
-            <p>Table-Tennis</p>
-
-        </div>
-    </div>
-
-    <footer class="footer">
-        <div class="copyright-section">
-
-            <div class="copytext">
-                &copy; Aakash Baranwal. All rights reserved
+        <div class="column">
+            <div class="card">
+                <h3><b>Hobbies</b></h3>
+                <p>History</p>
+                <p>Travelling</p>
+                <p>Adventure Sports</p>
+                <p>Table-Tennis</p>
 
             </div>
-
         </div>
-        <!-- .copyright-section -->
-    </footer>
-    <!-- .footer -->
+
+        <footer class="footer">
+            <div class="copyright-section">
+
+                <div class="copytext">
+                    &copy; Aakash Baranwal. All rights reserved
+
+                </div>
+
+            </div>
+            <!-- .copyright-section -->
+        </footer>
+        <!-- .footer -->
 
 </body>
 </html>

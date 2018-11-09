@@ -12,6 +12,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 
+
+
     <!-- web-fonts -->
     <link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet">
 
@@ -30,7 +32,9 @@
 
     <title>Rhea Nayyar</title>
 
-
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
 
     <style>
@@ -162,11 +166,18 @@
             -moz-transform-style: preserve-3d;
             -ms-transform-style: preserve-3d;
             transform-style: preserve-3d;
+            position:left;
         }
 
             #spinner:hover {
-                -webkit-animation-play-state: paused;
-                animation-play-state: paused;
+                -webkit-animation-play-state: running;
+                animation-play-state: running;
+            }
+
+            div.relative{
+                position:relative;
+                left:350px;
+                
             }
     </style>
 
@@ -181,10 +192,7 @@
             box-shadow: inset 0 0 20px rgba(0,0,0,0.2);
         }
     </style>
-
-
-
-
+         
 
 
 
@@ -496,35 +504,34 @@
     <h1 style="text-align:center">STUDENT EXCHANGE PROGRAM</h1>
 
 
-    <div id="stage" style="background: rgba(0,0,0,0.5);">
+    <div id="stage" style="background: rgba(0,0,0,0.5); width:50%">
         <p id="spinner" style="background: rgba(0,0,0,0.5);transition-delay:unset; text-align: center; position:center; font-size:20px ;color: #fff;">DAYALBAGH EDUCATIONAL INSTITUTE WELCOMES YOU</p>
-
-
     </div>
 
 
 
-    <div id="stage" style="padding-left: 280px; height: 260px; position:center">
+    <div id="stage" style="padding-left: 280px; height: 260px; ">
 
 
         <div class="bg-image"></div>
 
         <div class="bg-text">
 
-            <h1 class="glow" style="font-size:50px">RHEA NAYYAR</h1>
-            <h2 class="glow">FACULTY OF  SOCIAL SCIENCE</h2>
-            <h3 class="glow">DAYALBAGH EDUCATIONAL INSTITUTE (DEEMED UNIVERSITY)</h3>
+            <h1 style="font-size:3vw;" class="glow" style="font-size:50px">RHEA NAYYAR</h1>
+            <h2 style="font-size:3vw;" class="glow">FACULTY OF  SOCIAL SCIENCE</h2>
+            <h3 style="font-size:3vw;" class="glow">DAYALBAGH EDUCATIONAL INSTITUTE (DEEMED UNIVERSITY)</h3>
         </div>
-
-        <div id="spinner" style="-webkit-transform-origin: 180px 0 0;">
-            <img style="-webkit-transform: rotateY(0deg) translateX(180px); padding: 0 0 0 0;" src="img/1394441747Dayalbagh Educational Institute.png" width="280px" height="260px" alt="">
-            <img style="-webkit-transform: rotateY(-72deg) translateX(180px); padding: 0 0 0 0;" src="img/hku.jpg" width="280px" height="260px" alt="">
-            <img style="-webkit-transform: rotateY(-216deg) translateX(180px); padding: 0 0 0 0;" src="img/1394441747Dayalbagh Educational Institute.png" width="280px" height="260px" alt="">
-            <img style="-webkit-transform: rotateY(-288deg) translateX(180px); padding: 0 0 0 0;" src="img/hku.jpg" width="280px" height="260px" alt="">
+        <div class="relative">
+            <div id="spinner" style="-webkit-transform-origin: 180px 0 0;">
+                <img style="-webkit-transform: rotateY(0deg) translateX(180px); padding: 0 0 0 0;" src="img/1394441747Dayalbagh Educational Institute.png" width="280px" height="260px" alt="">
+                <img style="-webkit-transform: rotateY(-72deg) translateX(180px); padding: 0 0 0 0;" src="img/hku.jpg" width="280px" height="260px" alt="">
+                <img style="-webkit-transform: rotateY(-216deg) translateX(180px); padding: 0 0 0 0;" src="img/1394441747Dayalbagh Educational Institute.png" width="280px" height="260px" alt="">
+                <img style="-webkit-transform: rotateY(-288deg) translateX(180px); padding: 0 0 0 0;" src="img/hku.jpg" width="280px" height="260px" alt="">
+            </div>
         </div>
     </div>
 
-    <img src="img/image1.jpeg" style="width:20%;height:auto;margin:0 0 auto 70%" />
+    <img class="" src="img/image1.jpeg" style="width:20%;height:auto;margin:0 0 0 0" />
 
     <div class="container" style="background-image; width:100%; height:auto;position:center">
 

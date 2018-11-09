@@ -12,18 +12,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 
-    <!-- web-fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet">
-
-    <!-- font-awesome -->
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Style CSS -->
-    <link href="css/style.css" rel="stylesheet">
-
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 
@@ -31,6 +19,9 @@
     <title>Aakash Baranwal</title>
 
 
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
 
     <style>
@@ -162,12 +153,18 @@
             -moz-transform-style: preserve-3d;
             -ms-transform-style: preserve-3d;
             transform-style: preserve-3d;
+            position: left;
         }
 
             #spinner:hover {
-                -webkit-animation-play-state: paused;
-                animation-play-state: paused;
+                -webkit-animation-play-state: running;
+                animation-play-state: running;
             }
+
+        div.relative {
+            position: relative;
+            left: 350px;
+        }
     </style>
 
 
@@ -181,9 +178,6 @@
             box-shadow: inset 0 0 20px rgba(0,0,0,0.2);
         }
     </style>
-
-
-
 
 
 
@@ -496,35 +490,35 @@
     <h1 style="text-align:center">STUDENT EXCHANGE PROGRAM</h1>
 
 
-    <div id="stage" style="background: rgba(0,0,0,0.5);">
+    <div id="stage" style="background: rgba(0,0,0,0.5); width:50%">
         <p id="spinner" style="background: rgba(0,0,0,0.5);transition-delay:unset; text-align: center; position:center; font-size:20px ;color: #fff;">DAYALBAGH EDUCATIONAL INSTITUTE WELCOMES YOU</p>
-
-
     </div>
 
 
 
-    <div id="stage" style="padding-left: 280px; height: 260px; position:center">
+    <div id="stage" style="padding-left: 280px; height: 260px; ">
 
 
         <div class="bg-image"></div>
 
         <div class="bg-text">
 
-            <h1 class="glow" style="font-size:50px">AAKASH BARANWAL</h1>
-            <h2 class="glow">FACULTY OF  ENGINEERING</h2>
-            <h3 class="glow">DAYALBAGH EDUCATIONAL INSTITUTE (DEEMED UNIVERSITY)</h3>
+            <h1 style="font-size:3vw;" class="glow" style="font-size:50px">AAKASH BARANWAL</h1>
+            <h2 style="font-size:3vw;" class="glow">FACULTY OF  ENGINEERING</h2>
+            <h3 style="font-size:3vw;" class="glow">DAYALBAGH EDUCATIONAL INSTITUTE (DEEMED UNIVERSITY)</h3>
         </div>
 
-        <div id="spinner" style="-webkit-transform-origin: 180px 0 0;">
-            <img style="-webkit-transform: rotateY(0deg) translateX(180px); padding: 0 0 0 0;" src="img/1394441747Dayalbagh Educational Institute.png" width="280px" height="260px" alt="">
-            <img style="-webkit-transform: rotateY(-72deg) translateX(180px); padding: 0 0 0 0;" src="img/hku.jpg" width="280px" height="260px" alt="">
-            <img style="-webkit-transform: rotateY(-216deg) translateX(180px); padding: 0 0 0 0;" src="img/1394441747Dayalbagh Educational Institute.png" width="280px" height="260px" alt="">
-            <img style="-webkit-transform: rotateY(-288deg) translateX(180px); padding: 0 0 0 0;" src="img/hku.jpg" width="280px" height="260px" alt="">
+
+        <div class="relative">
+            <div id="spinner" style="-webkit-transform-origin: 180px 0 0;">
+                <img style="-webkit-transform: rotateY(0deg) translateX(180px); padding: 0 0 0 0;" src="img/1394441747Dayalbagh Educational Institute.png" width="280px" height="260px" alt="">
+                <img style="-webkit-transform: rotateY(-72deg) translateX(180px); padding: 0 0 0 0;" src="img/hku.jpg" width="280px" height="260px" alt="">
+                <img style="-webkit-transform: rotateY(-216deg) translateX(180px); padding: 0 0 0 0;" src="img/1394441747Dayalbagh Educational Institute.png" width="280px" height="260px" alt="">
+                <img style="-webkit-transform: rotateY(-288deg) translateX(180px); padding: 0 0 0 0;" src="img/hku.jpg" width="280px" height="260px" alt="">
+            </div>
         </div>
     </div>
-
-    <img src="img/Screenshot_20180608-132807.png" style="width:20%;height:auto;margin:0 0 auto 70%" />
+    <img src="img/Screenshot_20180608-132807.png" style="width:20%;height:auto;margin:0 0 0 0" />
 
     <div class="container" style="background-image; width:100%; height:auto;position:center">
 
@@ -536,16 +530,19 @@
 
 
     <div align="center"><h1>INTRODUCTION</h1></div>
-    
-    <p align="center">Aakash Baranwal is a proud and a self-motivated student of Dayalbagh Educational Institute (Deemed University)
-    and is in his junior year (3rd Year) of Engineering, majoring <br />
-    in ELECTRICAL ENGINEERING with specialisation in COMPUTER SCIENCE.</p>
+
+    <p align="center">
+        Aakash Baranwal is a proud and a self-motivated student of Dayalbagh Educational Institute (Deemed University)
+        and is in his junior year (3rd Year) of Engineering, majoring <br />
+        in ELECTRICAL ENGINEERING with specialisation in COMPUTER SCIENCE.
+    </p>
     <p align="center">
         He is a Computer Scence enthusiast with a love for nature and enjoys visits to the mountains and the hilly areas and sometimes to the ocean banks.<br />
         He is fields of interests are Machine Learning, Deep Learning, Data Analytics, Web and App Development and Competitive Coding.<br />
         One of his paper got selected in "The Science of Consciousness" which was organized in Tucson, Arizona, USA in March 2018 and he has also<br />
         given a presentation in National Systems Conference which was organised by System Society of India and IEEE.
-        <br />In future he plans to pursue his masters in Computer Science in Machine Learning, Deep Learning and Data Analytics.</p>
+        <br />In future he plans to pursue his masters in Computer Science in Machine Learning, Deep Learning and Data Analytics.
+    </p>
 
 
 
@@ -589,66 +586,64 @@
     </div>
 
     <!--End of timeline-->
+    <!--For the 3 Text boxes-->
 
-
-<!--For the 3 Text boxes-->
-
-        <div class="column">
-            <div class="card">
-                <h3>Sports</h3>
-                <p>Football</p>
-                <p>Chess</p>
-                <p>Table-Tennis</p>
-                <p>Cricket</p>
-            </div>
+    <div class="column">
+        <div class="card">
+            <h3>Sports</h3>
+            <p>Football</p>
+            <p>Chess</p>
+            <p>Table-Tennis</p>
+            <p>Cricket</p>
         </div>
+    </div>
 
-        <div class="column">
-            <div class="card">
-                <h3>Profiles</h3>
-                <p><a href="https://www.linkedin.com/in/aakash-baranwal/" target="_blank">Linkedln</a></p>
-                
-                <p><a href="https://baakash1998.github.io/" target="_blank">Website</a></p>
-            </div>
+    <div class="column">
+        <div class="card">
+            <h3>Profiles</h3>
+            <p><a href="https://www.linkedin.com/in/aakash-baranwal/" target="_blank">Linkedln</a></p>
+
+            <p><a href="https://baakash1998.github.io/" target="_blank">Website</a></p>
         </div>
+    </div>
 
-        <div class="column">
-            <div class="card">
-                <h3>Hobbies</h3>
-                <p>Web and App Development</p>
-                <p>Pondering over new ideas<br /> and concepts and devising methods to implement them.</p>
-                <p>Robotics</p>
-                <p>Coding</p>
+    <div class="column">
+        <div class="card">
+            <h3>Hobbies</h3>
+            <p>Web and App Development</p>
+            <p>Pondering over new ideas<br /> and concepts and devising methods to implement them.</p>
+            <p>Robotics</p>
+            <p>Coding</p>
 
 
-            </div>
         </div>
+    </div>
 
 
 
-        <button onclick="myFunction()">Way to my website</button>
+    <button onclick="myFunction()">Way to my website</button>
 
-        <script>
-            function myFunction() {
-                window.open('https://baakash1998.github.io/', '_blank');
+    <script>
+        function myFunction() {
+            window.open('https://baakash1998.github.io/', '_blank');
 
-            }
-        </script>
+        }
+    </script>
 
 
 
-        <footer class="footer">
-            <div class="copyright-section">
-                
-                            <div class="copytext">
-                                &copy; Aakash Baranwal. All rights reserved
-                                                               
-                            </div>
-                        
+    <footer class="footer">
+        <div class="copyright-section">
+
+            <div class="copytext">
+                &copy; Aakash Baranwal. All rights reserved
+
             </div>
-            <!-- .copyright-section -->
-        </footer>
-        <!-- .footer -->
+
+        </div>
+        <!-- .copyright-section -->
+    </footer>
+    <!-- .footer -->
 
 </body>
 </html>
