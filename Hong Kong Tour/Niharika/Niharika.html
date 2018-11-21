@@ -32,8 +32,12 @@
 
 
 
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
     <style>
+
         * {
             box-sizing: border-box;
         }
@@ -100,10 +104,8 @@
 
 
 
-
-
-
     <style type="text/css">
+
 
         /* WebKit and Opera browsers */
         @-webkit-keyframes spinner {
@@ -132,9 +134,8 @@
         }
     </style>
 
-
-
     <style type="text/css">
+
 
         #stage {
             margin: 1em auto;
@@ -145,9 +146,8 @@
         }
     </style>
 
-
-
     <style type="text/css">
+
 
         #spinner {
             -webkit-animation-name: spinner;
@@ -162,17 +162,22 @@
             -moz-transform-style: preserve-3d;
             -ms-transform-style: preserve-3d;
             transform-style: preserve-3d;
+            position: left;
         }
 
             #spinner:hover {
-                -webkit-animation-play-state: paused;
-                animation-play-state: paused;
+                -webkit-animation-play-state: running;
+                animation-play-state: running;
             }
+
+        div.relative {
+            position: relative;
+            left: 350px;
+        }
     </style>
 
-
-
     <style type="text/css">
+
 
         #spinner img {
             position: absolute;
@@ -183,14 +188,9 @@
     </style>
 
 
-
-
-
-
-
     <!--The code below creates a blurred image background and name appears in the center of the image-->
-
     <style>
+
         body, html {
             height: 50%;
             margin: 0;
@@ -235,14 +235,10 @@
 
 
 
-
-
-
     <!--The code below will be for the text blocks-->
 
-
-
     <style>
+
         * {
             box-sizing: border-box;
         }
@@ -289,13 +285,10 @@
     </style>
 
 
-
-
-
     <!--For the glowing text-->
 
-
     <style>
+
         body {
             font-family: cursive;
         }
@@ -321,11 +314,9 @@
     </style>
 
 
-
-
     <!--This code is for the timeline kinda view shown below-->
-
     <style>
+
         * {
             box-sizing: border-box;
         }
@@ -463,10 +454,6 @@
 
 
 
-
-
-
-
 </head>
 <body>
 
@@ -496,160 +483,115 @@
     <h1 style="text-align:center">STUDENT EXCHANGE PROGRAM</h1>
 
 
-    <div id="stage" style="background: rgba(0,0,0,0.5);">
-        <p id="spinner" style="background: rgba(0,0,0,0.5);transition-delay:unset; text-align: center; position:center; font-size:20px ;color: #fff;">DAYALBAGH EDUCATIONAL INSTITUTE WELCOMES YOU</p>
-
-
+    <div id="stage" style="background: rgba(0,0,0,0.5); width:50%   ">
+        <p id="spinner" style="background: rgba(0,0,0,0.5);transition-delay:unset; text-align: center; position:center; font-size:20px ;color: #fff;">DAYALBAGH EDUCATIONAL INSTITUTE WELCOMES YOU</p>       
     </div>
-
-
-
-    <div id="stage" style="padding-left: 280px; height: 260px; position:center">
-
-
+       
+    <div id="stage" style="padding-left: 280px; height: 260px; ">
         <div class="bg-image"></div>
-
         <div class="bg-text">
 
-            <h1 class="glow" style="font-size:50px">Pantula Mehar Niharika </h1>
-            <h2 class="glow">FACULTY OF  Arts</h2>
-            <h3 class="glow">DAYALBAGH EDUCATIONAL INSTITUTE (DEEMED UNIVERSITY)</h3>
+            <h1 style="font-size:3vw;" class="glow" style="font-size:50px">Pantula Mehar Niharika </h1>
+            <h2 style="font-size:3vw;" class="glow">FACULTY OF  ARTS</h2>
+            <h3 style="font-size:3vw;" class="glow">DAYALBAGH EDUCATIONAL INSTITUTE (DEEMED UNIVERSITY)</h3>
         </div>
 
-        <div id="spinner" style="-webkit-transform-origin: 180px 0 0;">
-            <img style="-webkit-transform: rotateY(0deg) translateX(180px); padding: 0 0 0 0;" src="img/1394441747Dayalbagh Educational Institute.png" width="280px" height="260px" alt="">
-            <img style="-webkit-transform: rotateY(-72deg) translateX(180px); padding: 0 0 0 0;" src="img/hku.jpg" width="280px" height="260px" alt="">
-            <img style="-webkit-transform: rotateY(-216deg) translateX(180px); padding: 0 0 0 0;" src="img/1394441747Dayalbagh Educational Institute.png" width="280px" height="260px" alt="">
-            <img style="-webkit-transform: rotateY(-288deg) translateX(180px); padding: 0 0 0 0;" src="img/hku.jpg" width="280px" height="260px" alt="">
+        
+            <div id="spinner" style="-webkit-transform-origin: 180px 0 0;">
+                <img style="-webkit-transform: rotateY(0deg) translateX(180px); padding: 0 0 0 0;" src="img/1394441747Dayalbagh Educational Institute.png" width="280px" height="260px" alt="">
+                <img style="-webkit-transform: rotateY(-72deg) translateX(180px); padding: 0 0 0 0;" src="img/hku.jpg" width="280px" height="260px" alt="">
+                <img style="-webkit-transform: rotateY(-216deg) translateX(180px); padding: 0 0 0 0;" src="img/1394441747Dayalbagh Educational Institute.png" width="280px" height="260px" alt="">
+                <img style="-webkit-transform: rotateY(-288deg) translateX(180px); padding: 0 0 0 0;" src="img/hku.jpg" width="280px" height="260px" alt="">
+            
         </div>
-    </div>
-
-    <img src="img/Screenshot_20180608-132807.png" style="width:20%;height:auto;margin:0 0 auto 70%" />
-
-    <div class="container" style="background-image; width:100%; height:auto;position:center">
-
-        <img style="width:100%;height:auto;position:center" src="img/REI2.jpg" />
-    </div>
+        </div>
+        <img src="img/Niharika.jpg" style="width:20%;height:auto;margin:0 0 auto 70%" />
+        <div class="container" style="background-image; width:100%; height:auto;position:center">
+            <img style="width:100%;height:auto;position:center" src="img/REI2.jpg" />
+        </div>
+          
 
 
+        <div align="center"><h1>INTRODUCTION</h1></div>
+        <p align="center">
+            Whose heart dances on beats and the life is on a rhythm
+            Whose soul is enchanted with music and its evolution,
+            I stand here in front, with this art as my passion.
+        </p>
+        <p align="center">
 
+            With a meaning in my name 'the vision of mercy' I Pantula Mehar Niharika is a student of English and Music from the Faculty of Arts, DEI.
+            As a mixture of language (foreign language English) and tradition (Classical Music) I build a new cover of the culture of my country.
+            To work on Music Therapy is the future aim I built, it is welfare of humanity for which it is meant.
+            I wish this trip brings new colors to me to nurture myself better and elevate my abilities.
+            I share my interest in composing poems and music, choreography, dramatics.
 
-
-    <div align="center"><h1>INTRODUCTION</h1></div>
-    
-    <p align="center">Aakash Baranwal is a proud and a self-motivated student of Dayalbagh Educational Institute (Deemed University)
-    and is in his junior year (3rd Year) of Engineering, majoring <br />
-    in ELECTRICAL ENGINEERING with specialisation in COMPUTER SCIENCE.</p>
-    <p align="center">
-        He is a Computer Scence enthusiast with a love for nature and enjoys visits to the mountains and the hilly areas and sometimes to the ocean banks.<br />
-        He is fields of interests are Machine Learning, Deep Learning, Data Analytics, Web and App Development and Competitive Coding.<br />
-        One of his paper got selected in "The Science of Consciousness" which was organized in Tucson, Arizona, USA in March 2018 and he has also<br />
-        given a presentation in National Systems Conference which was organised by System Society of India and IEEE.
-        <br />In future he plans to pursue his masters in Computer Science in Machine Learning, Deep Learning and Data Analytics.</p>
-
+        </p>
 
 
 
 
 
 
-    <!--This code below is for the timeline view presented on the website-->
 
-    <div class="timeline">
-        <div class="container left">
-            <div class="content">
-                <h2>JULY 2018</h2>
-                <p>Junior (3rd) Year starts with specialization in Computer Science while majoring in Electrical Engineering.</p>
+        <!--This code below is for the timeline view presented on the website-->
+
+        <div class="timeline">
+            <div class="container left">
+                <div class="content">
+                    <h2>JULY 2018</h2>
+                    <p>Sophomore (2nd) Year starts in Faculty of Arts.</p>
+                </div>
             </div>
+
+
+            <div class="container right">
+                <div class="content">
+                    <h2>JUNE 2018</h2>
+                    <p>DEI-HKU STUDENT EXCHANGE PROGRAM. A visit to Hong Kong University, Hong Kong.</p>
+                </div>
+            </div>
+
+
+            <div class="container left">
+                <div class="content">
+                    <h2>JULY 2017</h2>
+                    <p>Freshman (1st) Year in Faculty of Arts, Dayalbagh Educational Institute begins.</p>
+                </div>
+            </div>
+
         </div>
 
+        <!--End of timeline-->
+        <!--For the 3 Text boxes-->
 
-        <div class="container right">
-            <div class="content">
-                <h2>JUNE 2018</h2>
-                <p>DEI-HKU STUDENT EXCHANGE PROGRAM. A visit to Hong Kong University, Hong Kong.</p>
+        <div class="row">
+
+
+            <div class="column">
+                <div class="card">
+                    <h3>Hobbies</h3>
+                    <p>Dramatics</p>
+                    <p>Singing</p>
+
+
+                </div>
             </div>
-        </div>
 
 
 
-        <div class="container left">
-            <div class="content">
-                <h2>JULY 2017</h2>
-                <p>Sophomore (2nd) Year in Faculty of Engineering, Dayalbagh Educational Institute begins.</p>
-            </div>
-        </div>
-        <div class="container right">
-            <div class="content">
-                <h2>JULY 2016</h2>
-                <p>Freshman (1st) Year in Faculty of Engineering, Dayalbagh Educational Institute begins.</p>
-            </div>
-        </div>
+            <footer class="footer">
+                <div class="copyright-section">
 
-    </div>
+                    <div class="copytext">
+                        &copy; Aakash Baranwal. All rights reserved
 
-    <!--End of timeline-->
+                    </div>
 
-
-<!--For the 3 Text boxes-->
-
-    <div class="row">
-        <div class="column">
-            <div class="card">
-                <h3>Sports</h3>
-                <p>Football</p>
-                <p>Chess</p>
-                <p>Table-Tennis</p>
-                <p>Cricket</p>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="card">
-                <h3>Profiles</h3>
-                <p><a href="https://www.linkedin.com/in/aakash-baranwal/" target="_blank">Linkedln</a></p>
-                
-                <p><a href="https://baakash1998.github.io/" target="_blank">Website</a></p>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="card">
-                <h3>Hobbies</h3>
-                <p>Web and App Development</p>
-                <p>Pondering over new ideas<br /> and concepts and devising methods to implement them.</p>
-                <p>Robotics</p>
-                <p>Coding</p>
-
-
-            </div>
-        </div>
-
-
-
-        <button onclick="myFunction()">Way to my website</button>
-
-        <script>
-            function myFunction() {
-                window.open('https://baakash1998.github.io/', '_blank');
-
-            }
-        </script>
-
-
-
-        <footer class="footer">
-            <div class="copyright-section">
-                
-                            <div class="copytext">
-                                &copy; Aakash Baranwal. All rights reserved
-                                                               
-                            </div>
-                        
-            </div>
-            <!-- .copyright-section -->
-        </footer>
-        <!-- .footer -->
+                </div>
+                <!-- .copyright-section -->
+            </footer>
+            <!-- .footer -->
 
 </body>
 </html>
