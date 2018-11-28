@@ -100,7 +100,7 @@
 
     <div class="header">
         <h2>Aakash's Blog</h2>
-        <img style="width:40%;height:auto;position:relative;" src="img/octocat.png" />         
+        <img style="width:40%;height:auto;position:relative;" src="img/octocat.png" />
     </div>
 
     <div class="row">
@@ -121,13 +121,19 @@
 
 
                 <p><b>Getting a MongoDB type database on a static webpage that too in your HTML page. Well, How cool is that? Here's a thought....</p></b>
-                <p>MongoDB is a NoSQL database which unlike the traditional RDBMS databases stores data in JSON file format<br />
-                whereas RDBMS databases stores data in tabular form. So, instead of actually pushing the data into the database<br />
-                be it a NoSQL or RDBMS database, if the website or the webpage isin't a dyanmic one but static then one beautiful thing can be done.</p>
-                <p>WHICH IS: How about creating the JSON file ourselves and integrating it inside our static webpage and suppose if we need to find some<br />
-                data out of that information onlythen we can perform a traverse, search and extract operation on the JSON data. This will be very cool thing to try on.</p>
-                <p>Another thing I would like you all to try on is call an api and use m-lab on the above setup and see what happens or could be done. I bet it is cooler 
-                than you think it is. <br /><br />Bye!!!!@aakash</p>
+                <p>
+                    MongoDB is a NoSQL database which unlike the traditional RDBMS databases stores data in JSON file format<br />
+                    whereas RDBMS databases stores data in tabular form. So, instead of actually pushing the data into the database<br />
+                    be it a NoSQL or RDBMS database, if the website or the webpage isin't a dyanmic one but static then one beautiful thing can be done.
+                </p>
+                <p>
+                    WHICH IS: How about creating the JSON file ourselves and integrating it inside our static webpage and suppose if we need to find some<br />
+                    data out of that information onlythen we can perform a traverse, search and extract operation on the JSON data. This will be very cool thing to try on.
+                </p>
+                <p>
+                    Another thing I would like you all to try on is call an api and use m-lab on the above setup and see what happens or could be done. I bet it is cooler
+                    than you think it is. <br /><br />Bye!!!!@aakash
+                </p>
             </div>
 
 
@@ -137,7 +143,7 @@
                 <h5>November 10, 2018</h5>
                 <p>
                     <br />Few years back no one would have imagined that there might come a time when blind people would also be able to see. Not seeing through actual eyes,
-                    but using the technology they will be able to know what exactly is happening in the world around them which till a couple of years back a science 
+                    but using the technology they will be able to know what exactly is happening in the world around them which till a couple of years back a science
                     fiction that has been converted into reality by Mr. Saqib Shaikh. <br />
                     Sqib Shaikh who is a Microsoft developer, developed an Artificial Intelligence based eye-glass which is just like any other glass people wear but is a boon.<br />
                     <br />
@@ -152,7 +158,7 @@
                     <Featured image>
                         <div class="overlay hm-white-slight rounded z-depth-2">
                             <div class="embed-responsive embed-responsive-16by9">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/vuJXqUE85so" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/vuJXqUE85so" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
                             <a>
                                 <div class="mask"></div>
@@ -161,12 +167,12 @@
                             <p><br />Saqib Shaikh is a software developer of microsoft and has developed artificial intelligence app for blind people.</p>
                             <h6>Note: This video was posted on youtube by Science Today and not by me. I am merely using it to tell the world about him.</h6>
                         </div>
-                    
+
                 </div>
             </div>
         </div>
 
-        
+
         <div class="rightcolumn">
             <div class="card">
                 <h2>About Me</h2>
@@ -210,7 +216,26 @@
     <link rel="stylesheet" type="text/css" href="//www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
     <script type="text/javascript" id="hcb">/*<!--*/ if (!window.hcb_user) { hcb_user = {}; } (function () { var s = document.createElement("script"), l = hcb_user.PAGE || ("" + window.location).replace(/'/g, "%27"), h = "//www.htmlcommentbox.com"; s.setAttribute("type", "text/javascript"); s.setAttribute("src", h + "/jread?page=" + encodeURIComponent(l).replace("+", "%2B") + "&mod=%241%24wq1rdBcg%24wS9R2B5KzeUd2nym%2FbGVI%2F" + "&opts=16862&num=10&ts=1541444798463"); if (typeof s != "undefined") document.getElementsByTagName("head")[0].appendChild(s); })(); /*-->*/</script>
     <!-- end www.htmlcommentbox.com -->
+    <!--
+    <?php require 'Mailchimp.php';?>
+    $mailChimp = new Mailchimp("041245cc4b84759877ae144a2a7471c3-us19");
+    lists/subscribe (string apikey, string id, struct email, struct merge_vars, string email_type, bool double_optin, bool update_existing, bool replace_interests, bool send_welcome)
+    $result=$mailChimp->call("Aakash's Blog/subscribe", array(
+    "id"=>"3c462e4d70",
+    "email"=>array("email"=>"testuser@somedomain.com"),
+    "update_existing"=>true,
+    "send_welcome"=>false,
+    ));
+    var_dump($result);
 
+    ?>
+
+        -->
+    <!--The code below is for the mailchimp subscription form
+    <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js"data-dojo-config="usePlainJson: true, isDebug: false"></script>
+    <script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"],function (L) { L.start({ "baseUrl": "mc.us19.list-manage.com", "uuid": "6f89506ab71f895e4939a3482", "lid": "a2bb8eb2a6", "uniqueMethods": true }) })</script>
+
+        -->
 
 
     <div class="copyright-section">

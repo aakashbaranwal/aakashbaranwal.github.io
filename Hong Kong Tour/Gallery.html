@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+<html>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        font-family: Arial;
+    }
+
+    .header {
+        text-align: center;
+        padding: 32px;
+    }
+
+    .row {
+        display: -ms-flexbox; /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap; /* IE10 */
+        flex-wrap: wrap;
+        padding: 0 4px;
+    }
+
+    /* Create four equal columns that sits next to each other */
+    .column {
+        -ms-flex: 25%; /* IE10 */
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 2px;
+    }
+
+        .column img {
+            margin-top: 8px;
+            vertical-align: middle;
+        }
+
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 800px) {
+        .column {
+            -ms-flex: 50%;
+            flex: 50%;
+            max-width: 50%;
+        }
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+        .column {
+            -ms-flex: 100%;
+            flex: 100%;
+            max-width: 100%;
+        }
+    }
+</style>
+
+
+<style>
+    .button {
+        display: inline-block;
+        border-radius: 4px;
+        background-color: #f4511e;
+        border: none;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 28px;
+        padding: 20px;
+        width: 200px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+    }
+
+        .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+            .button span:after {
+                content: '\00bb';
+                position: absolute;
+                opacity: 0;
+                top: 0;
+                right: -20px;
+                transition: 0.5s;
+            }
+
+        .button:hover span {
+            padding-right: 25px;
+        }
+
+            .button:hover span:after {
+                opacity: 1;
+                right: 0;
+            }
+</style>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <h1>SKILL DEVELOPMENT - DEI</h1>
+    </div>
+
+    <!-- Photo Grid -->
+    <div class="row">
+        <div class="column">
+            <img src="skill/4.jpg" style="width:100%">
+            <img src="skill/2.jpg" style="width:100%">
+            <img src="skill/3.jpg" style="width:100%">
+            <img src="skill/1.jpg" style="width:100%">
+            <img src="skill/5.jpg" style="width:100%">
+            <img src="skill/6.jpg" style="width:100%">
+            <img src="skill/7.jpg" style="width:100%">
+            <img src="skill/53.jpg" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="skill/8.jpg" style="width:100%">
+            <img src="skill/9.jpg" style="width:100%">
+            <img src="skill/10.jpg" style="width:100%">
+            <img src="skill/69.jpg" style="width:100%">
+            <img src="skill/70.jpg" style="width:100%">
+            <img src="skill/11.jpg" style="width:100%">
+            <img src="skill/12.jpg" style="width:100%">
+            <img src="skill/13.jpg" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="skill/14.jpg" style="width:100%">
+            <img src="skill/15.jpg" style="width:100%">
+            <img src="skill/16.jpg" style="width:100%">
+            <img src="skill/17.jpg" style="width:100%">
+            <img src="skill/18.jpg" style="width:100%">
+            <img src="skill/19.jpg" style="width:100%">
+            <img src="skill/42.jpg" style="width:100%">
+            <img src="skill/20.jpg" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="skill/21.jpg" style="width:100%">
+            <img src="skill/71.jpg" style="width:100%">
+            <img src="skill/22.jpg" style="width:100%">
+            <img src="skill/23.jpg" style="width:100%">
+            <img src="skill/40.jpeg" style="width:100%">
+            <img src="skill/24.jpg" style="width:100%">
+            <img src="skill/25.jpg" style="width:100%">
+            <img src="skill/26.tif" style="width:100%">
+        </div>
+    </div>
+    <script type="text/javascript">
+
+        function showmore() {
+
+            window.open("more.html");
+
+
+        }
+
+    </script>
+    <button class="button" onclick="showmore();" style="vertical-align:middle"><span>Show More </span></button>
+
+
+    <script type="text/javascript">
+
+        function home() {
+
+            window.open("dei-hku-sep.html");
+
+
+        }
+
+    </script>
+    <button class="button" onclick="home();" style="vertical-align:middle"><span>Home </span></button>
+
+
+
+</body>
+</html>

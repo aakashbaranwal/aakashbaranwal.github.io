@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Dei Student Study Material</title>
+
+    <style>
+        .intro {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 20px;
+        }
+    </style>
+    <script type="text/javascript">
+
+        function welcome() {
+            var welcome_passage = document.getElementById('Welcome');
+            var name = document.getElementById('name');
+            welcome_passage.innerHTML = "Welcome " + name.value;
+        }
+    </script>
+
+</head>
+<body>
+
+    <form style="font-size:20px; text-align:right;">
+        Please tell me your full name: <input type="text" id="name" /><br />
+        <input type="button" class="intro" value="done" onclick="welcome();" />
+    </form>
+
+    <p id="Welcome"></p>
+
+    <!--Faculty Detail-->
+    <script type="text/javascript">
+
+        function faculty() {
+            var faculty = document.getElementById('fac');
+            var deifaculty = document.getElementById('deifaculty');
+            faculty.innerHTML = "Welcome to " + deifaculty.value;
+        }
+    </script>
+
+    <form style="font-size:20px; text-align:right;">
+        What is your Faculty: <input type="text" id="deifaculty" /><br />
+        <input type="button" class="intro" value="done" onclick="faculty();" />
+    </form>
+
+    <p id="fac"></p>
+
+    <!--Graduate Year of Study-->
+    <script type="text/javascript">
+
+        function year() {
+            var graduateyearofstudy = document.getElementById('year');
+            var yearofstudy = document.getElementById('yearofstudy');
+            graduateyearofstudy.innerHTML = "I get it. So you are in  " + yearofstudy.value + " year";
+        }
+    </script>
+
+    <form style="font-size:20px; text-align:right;">
+        What is your Year of Study: <input type="text" id="yearofstudy" /><br />
+        <input type="button" class="intro" value="done" onclick="year();" />
+    </form>
+
+    <p id="year"></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
