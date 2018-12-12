@@ -4,6 +4,10 @@
 <head>
 
 
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+
     <!--These 2 lines of code make the website adapt to any browser with any size, i.e. they are made responsive-->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css" />
@@ -12,27 +16,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css" />
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 
-
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="mdb.min.css" rel="stylesheet">
-    <!--link href="http://www.dei.ac.in/dei/tedxdei/css/style.css" rel="stylesheet"-->
-    <link href="http://www.dei.ac.in/dei/clickers/css/style.css" rel="stylesheet">
-
-
-
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="mdb.min.css" rel="stylesheet">
+
+    <link href="http://www.dei.ac.in/dei/clickers/css/style.css" rel="stylesheet">
+
 
 
     <!-- web-fonts -->
@@ -47,12 +44,13 @@
     <!-- Style CSS -->
     <link href="css/style.css" rel="stylesheet">
 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 
-
+    <title>Gallery</title>
 
 
     <style>
@@ -258,121 +256,140 @@
         }
     </style>
 
+
+    <style>
+        .responsive {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+
+
 </head>
 
-    <body>
+<body>
 
 
-        <h1 style="text-align:center; font-family:'Times New Roman';">Student Exchange Program</h1>
-        <a href="https://www.dei.ac.in/dei/" target="_blank"><img class="dei" src="img1/1394441747Dayalbagh Educational Institute.png" style="width:10%;height:auto;margin:0 0 0 0"></a>
-        <a href="https://hku.hk/" target="_blank"><img class="hku" src="img1/hku.jpg" style="width:10%;height:auto;margin:0 0 0 0"></a>
-        <h1 style="text-align:center; font-family:'Times New Roman';">Dayalbagh Educational Institute (Deemed University) - <br />Hong Kong University</h1>
+    <div class="container">
+        <a href="https://www.dei.ac.in/dei/" target="_blank">
+            <img class="responsive" src="img1/1394441747Dayalbagh Educational Institute.png"
+                 align="left" style="width:20%;height:auto;margin:0 0 0 0">
+        </a>
+
+        <a href="https://hku.hk/" target="_blank"><img class="responsive" align="right" src="img1/hku.jpg" style="width:20%;height:auto;margin:0 0 0 0"></a>
+        <h1 class="responsive" style="text-align:center; font-family:'Times New Roman';">STUDENT EXCHANGE PROGRAM</h1>
+        <h1 class="responsive" style="text-align:center; font-family:'Times New Roman';">DAYALBAGH EDUCATIONAL INSTITUTE (DEEMED UNIVERSITY) - <br />HONG KONG UNIVERSITY </h1>
+
+    </div>
 
 
-        <!-- Header -->
-        <div class="header">
-            <h1 style="text-align:center; font-family:'Times New Roman';">SKILL DEVELOPMENT - DEI</h1>
+
+    <br />
+    <!-- Header -->
+    <div class="container">
+        <h1 class="responsive" style="text-align:center; font-family:'Times New Roman';">SKILL DEVELOPMENT - DEI</h1>
+    </div>
+
+
+    <!-- Photo Grid -->
+    <div class="row">
+        <div class="column">
+            <img src="skill/27.jpg" style="width:100%">
+            <img src="skill/28.jpg" style="width:100%">
+            <img src="skill/68.jpeg" style="width:100%">
+            <img src="skill/48.jpg" style="width:100%">
+            <img src="skill/63.jpg" style="width:100%">
         </div>
 
-        <!-- Photo Grid -->
-        <div class="row">
-            <div class="column">
-                <img src="skill/27.jpg" style="width:100%">
-                <img src="skill/28.jpg" style="width:100%">
-                <img src="skill/68.jpeg" style="width:100%">
-                <img src="skill/48.jpg" style="width:100%">
-                <img src="skill/63.jpg" style="width:100%">
-            </div>
+        <div class="column">
+            <img src="skill/33.jpg" style="width:100%">
+            <img src="skill/DSC_0021.jpg" style="width:100%">
+            <img src="skill/44.jpg" style="width:100%">
+            <img src="skill/29.jpg" style="width:100%">
+            <img src="skill/65.jpg" style="width:100%">
 
-            <div class="column">
-                <img src="skill/33.jpg" style="width:100%">
-                <img src="skill/DSC_0021.jpg" style="width:100%">
-                <img src="skill/44.jpg" style="width:100%">
-                <img src="skill/29.jpg" style="width:100%">
-                <img src="skill/65.jpg" style="width:100%">
+        </div>
 
-            </div>
+        <div class="column">
+            <img src="skill/39.jpg" style="width:100%">
+            <img src="skill/25.jpg" style="width:100%">
+            <img src="skill/58.jpg" style="width:100%">
+            <img src="skill/Dairy Technology implements developed by Students.jpeg" style="width:100%">
+            <img src="skill/Agri1.jpg" style="width:100%">
+            <img src="skill/DSC_0013.jpg" style="width:100%">
+        </div>
 
-            <div class="column">
-                <img src="skill/39.jpg" style="width:100%">
-                <img src="skill/25.jpg" style="width:100%">
-                <img src="skill/58.jpg" style="width:100%">
-                <img src="skill/Dairy Technology implements developed by Students.jpeg" style="width:100%">
-                <img src="skill/Agri1.jpg" style="width:100%">
-                <img src="skill/DSC_0013.jpg" style="width:100%">
-            </div>
-
-            <div class="column">
-                <img src="skill/Agri2.jpg" style="width:100%">
-                <img src="skill/DSC_0020.jpg" style="width:100%">
-                <img src="skill/IMG_0019.jpg" style="width:100%">
-                <img src="skill/DSC_0011.jpg" style="width:100%">
-                <img src="skill/DSC_0012.jpg" style="width:100%">
-                <img src="skill/DSC_0003.jpg" style="width:100%">
-            </div>
-            <!--
+        <div class="column">
+            <img src="skill/Agri2.jpg" style="width:100%">
+            <img src="skill/DSC_0020.jpg" style="width:100%">
+            <img src="skill/IMG_0019.jpg" style="width:100%">
+            <img src="skill/DSC_0011.jpg" style="width:100%">
+            <img src="skill/DSC_0012.jpg" style="width:100%">
+            <img src="skill/DSC_0003.jpg" style="width:100%">
+        </div>
+        <!--
         <div class="column">
         </div>-->
+    </div>
+
+
+
+
+
+
+
+    <div class="row">
+        <div class="column">
+            <img src="skill/38.jpg" style="width:100%">
         </div>
-
-
-
-
-
-
-
-        <div class="row">
-            <div class="column">
-                <img src="skill/38.jpg" style="width:100%">
-            </div>
-            <div class="column">
-                <img src="skill/32.jpg" style="width:100%">
-            </div>
-            <div class="column">
-                <img src="skill/52.jpg" style="width:100%">
-            </div>
-            <div class="column">
-                <img src="skill/5.jpg" style="width:100%">
-            </div>
+        <div class="column">
+            <img src="skill/32.jpg" style="width:100%">
         </div>
+        <div class="column">
+            <img src="skill/52.jpg" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="skill/5.jpg" style="width:100%">
+        </div>
+    </div>
 
 
-        <script type="text/javascript">
+    <script type="text/javascript">
 
-            function home() {
+        function home() {
 
-                window.open("dei-hku-sep.html");
-
-
-            }
-
-        </script>
-        <button class="button" onclick="home();" style="vertical-align:middle"><span>Home </span></button>
-
-        <script type="text/javascript">
-
-            function gallery() {
-
-                window.open("Gallery.html");
+            window.open("dei-hku-sep.html");
 
 
-            }
+        }
 
-        </script>
-        <button class="button" onclick="gallery();" style="vertical-align:middle"><span>Gallery </span></button>
-        <footer class="footer">
-            <div class="copyright-section">
+    </script>
+    <button class="button" onclick="home();" style="vertical-align:middle"><span>Home </span></button>
 
-                <div class="copytext">
-                    &copy; Dayalbagh Educational Institute. All rights reserved                     
+    <script type="text/javascript">
 
-                </div>
+        function gallery() {
+
+            window.open("Gallery.html");
+
+
+        }
+
+    </script>
+    <button class="button" onclick="gallery();" style="vertical-align:middle"><span>Gallery </span></button>
+    <footer class="footer">
+        <div class="copyright-section">
+
+            <div class="copytext">
+                &copy; Dayalbagh Educational Institute. All rights reserved
 
             </div>
-            <!-- .copyright-section -->
-        </footer>
-        <!-- .footer -->
+
+        </div>
+        <!-- .copyright-section -->
+    </footer>
+    <!-- .footer -->
 
 
-    </body>
+</body>
 </html>
