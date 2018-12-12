@@ -3,7 +3,6 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
 
-
     <!--These 2 lines of code make the website adapt to any browser with any size, i.e. they are made responsive-->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css" />
@@ -12,11 +11,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css" />
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="mdb.min.css" rel="stylesheet">
+    <!--link href="http://www.dei.ac.in/dei/tedxdei/css/style.css" rel="stylesheet"-->
+    <link href="http://www.dei.ac.in/dei/clickers/css/style.css" rel="stylesheet">
+
+
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+
+
     <!-- web-fonts -->
     <link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet">
 
     <!-- font-awesome -->
-    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="font-awesome.min.css" rel="stylesheet">
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -24,13 +46,13 @@
     <!-- Style CSS -->
     <link href="css/style.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 
 
     <title>Arshita Satsangee</title>
-
-
 
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -138,111 +160,6 @@
 
 
 
-    <style type="text/css">
-
-        #stage {
-            margin: 1em auto;
-            -webkit-perspective: 1200px;
-            -moz-perspective: 1200px;
-            -ms-perspective: 1200px;
-            perspective: 1200px;
-        }
-    </style>
-
-
-
-    <style type="text/css">
-
-        #spinner {
-            -webkit-animation-name: spinner;
-            -webkit-animation-timing-function: linear;
-            -webkit-animation-iteration-count: infinite;
-            -webkit-animation-duration: 6s;
-            animation-name: spinner;
-            animation-timing-function: linear;
-            animation-iteration-count: infinite;
-            animation-duration: 6s;
-            -webkit-transform-style: preserve-3d;
-            -moz-transform-style: preserve-3d;
-            -ms-transform-style: preserve-3d;
-            transform-style: preserve-3d;
-            position: left;
-        }
-
-            #spinner:hover {
-                -webkit-animation-play-state: running;
-                animation-play-state: running;
-            }
-
-        div.relative {
-            position: relative;
-            left: 350px;
-        }
-    </style>
-
-
-
-    <style type="text/css">
-
-        #spinner img {
-            position: absolute;
-            border: 1px solid #ccc;
-            background: rgba(255,255,255,0.8);
-            box-shadow: inset 0 0 20px rgba(0,0,0,0.2);
-        }
-    </style>
-
-
-
-
-    <!--The code below creates a blurred image background and name appears in the center of the image-->
-
-    <style>
-        body, html {
-            height: 50%;
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        * {
-            box-sizing: border-box;
-        }
-
-        .bg-image {
-            /* The image used */
-            background-image: url("img/REI2.jpg");
-            /* Add the blur effect */
-            filter: blur(5px);
-            -webkit-filter: blur(5px);
-            /* Full height */
-            height: 100%;
-            /* Center and scale the image nicely */
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        /* Position text in the middle of the page/image */
-        .bg-text {
-            background-color: rgb(0,0,0); /* Fallback color */
-            background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-            color: white;
-            font-weight: bold;
-            border: 0px solid #f1f1f1;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 2;
-            width: 100%;
-            padding: 0px;
-            text-align: center;
-        }
-    </style>
-
-
-
-
 
 
     <!--The code below will be for the text blocks-->
@@ -292,38 +209,6 @@
             padding: 16px;
             text-align: center;
             background-color: #f1f1f1;
-        }
-    </style>
-
-
-
-
-
-    <!--For the glowing text-->
-
-
-    <style>
-        body {
-            font-family: cursive;
-        }
-
-        .glow {
-            font-size: 40px;
-            color: #fff;
-            text-align: center;
-            -webkit-animation: glow 1s ease-in-out infinite alternate;
-            -moz-animation: glow 1s ease-in-out infinite alternate;
-            animation: glow 1s ease-in-out infinite alternate;
-        }
-
-        @-webkit-keyframes glow {
-            from {
-                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-            }
-
-            to {
-                text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-            }
         }
     </style>
 
@@ -468,9 +353,59 @@
     </style>
 
 
+    <style>
+        .dei {
+            position: absolute;
+            left: 0px;
+        }
+    </style>
+
+    <style>
+        .hku {
+            position: absolute;
+            right: 0px;
+        }
+    </style>
 
 
 
+    <style>
+        .card1 {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 300px;
+            margin: auto;
+            text-align: center;
+            font-family: arial;
+        }
+
+        .title {
+            color: grey;
+            font-size: 18px;
+        }
+
+        button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 22px;
+            color: black;
+        }
+
+            button:hover, a:hover {
+                opacity: 0.7;
+            }
+    </style>
 
 
 
@@ -498,141 +433,109 @@
         -->
 
 
+    <h1 style="text-align:center; font-family:'Times New Roman';">Student Exchange Program</h1>
+    <a href="https://www.dei.ac.in/dei/" target="_blank"><img class="dei" src="img/1394441747Dayalbagh Educational Institute.png" style="width:10%;height:auto;margin:0 0 0 0"></a>
+    <a href="https://hku.hk/" target="_blank"><img class="hku" src="img/hku.jpg" style="width:10%;height:auto;margin:0 0 0 0"></a>
+    <h1 style="text-align:center; font-family:'Times New Roman';">Dayalbagh Educational Institute (Deemed University) - <br />Hong Kong University</h1>
 
 
-    <h1 style="text-align:center">DAYALBAGH EDUCATIONAL INSTITUTE (DEEMED UNIVERSITY)</h1>
-    <h1 style="text-align:center">STUDENT EXCHANGE PROGRAM</h1>
+    <h1 class="card1" style="text-align:center; font-family:'Times New Roman'">Arshita Satsangee</h1>
+    <h2 style="text-align:center; font-family:'Times New Roman';">Faculty of Social Science</h2>
+    <h3 style="text-align:center; font-family:'Times New Roman';">Dayalbagh Educational Institute (Deemed University)</h3>
 
 
-    <div id="stage" style="background: rgba(0,0,0,0.5); width:50%">
-        <p id="spinner" style="background: rgba(0,0,0,0.5);transition-delay:unset; text-align: center; position:center; font-size:20px ;color: #fff;">DAYALBAGH EDUCATIONAL INSTITUTE WELCOMES YOU</p>
+    <div align="center"><h1 class="card1" style="text-align:center; font-family:'Times New Roman';position:relative;">Introduction</h1></div>
 
+    <p align="center" style="font-size:20px;">
+        Introducing myself, I am Arshita Satsangee, a first year student pursuing my Major studies in Psychology and English from Dayalbagh Educational Institute, Agra, India.<br />
+        Being a national Table Tennis player and having an avid interest in various fields like adventure sports and travelling, my areas of interest also revolve <br />
+        around History, be it visiting historical monuments, reading historical books or watching Historical stage shows.For the next few years from now,
+        I have kept my options open considering getting into the field of Law or pursuing a Master's in psychology. <br />
+        The skill sets which I would like to acquire apart from excelling in academics are pottery-making and learning about the cultural diversities and cuisines.
+    </p>
+    <p align="center" style="font-size:20px;">
+        I am a backpacker and a gypsy soul looking to explore different landscapes. I live by the saying 'Carpe Diem'-Seize the Day (making the most of the day and most of life).<br />
+        The 3 precepts I live by are
+        Adhyayn ( ongoing learning and education).
+        Seva ( inculcating the spirit of selfless service and contributing to the community at large).
+        Vyayam ( a sound mind in a healthy body because only when we remain fit , we can serve others).
+    </p>
 
+    <div>
+        <img src="img/Arshita.jpg" style="width:20%;height:auto;margin:0 0 0 0" />
+        <img style="width:50%;height:auto;position:center" src="img/REI2.jpg" />
     </div>
 
 
 
-    <div id="stage" style="padding-left: 280px; height: 260px; position:center">
-
-
-        <div class="bg-image"></div>
-
-        <div class="bg-text">
-
-            <h1 style="font-size:3vw;" class="glow" style="font-size:50px">ARSHITA SATSANGEE</h1>
-            <h2 style="font-size:3vw;" class="glow">FACULTY OF  SOCIAL SCIENCE</h2>
-            <h3 style="font-size:3vw;" class="glow">DAYALBAGH EDUCATIONAL INSTITUTE (DEEMED UNIVERSITY)</h3>
-        </div>
-
-        <div class="relative">
-            <div id="spinner" style="-webkit-transform-origin: 180px 0 0;">
-                <img style="-webkit-transform: rotateY(0deg) translateX(180px); padding: 0 0 0 0;" src="img/1394441747Dayalbagh Educational Institute.png" width="280px" height="260px" alt="">
-                <img style="-webkit-transform: rotateY(-72deg) translateX(180px); padding: 0 0 0 0;" src="img/hku.jpg" width="280px" height="260px" alt="">
-                <img style="-webkit-transform: rotateY(-216deg) translateX(180px); padding: 0 0 0 0;" src="img/1394441747Dayalbagh Educational Institute.png" width="280px" height="260px" alt="">
-                <img style="-webkit-transform: rotateY(-288deg) translateX(180px); padding: 0 0 0 0;" src="img/hku.jpg" width="280px" height="260px" alt="">
-            </div>
-            </div>
-        </div>
-
-        <img src="img/Arshita.jpg" style="width:20%;height:auto;margin:0 0 0 0" />
-
-        <div class="container" style="background-image; width:100%; height:auto;position:center">
-
-            <img style="width:100%;height:auto;position:center" src="img/REI2.jpg" />
-        </div>
 
 
 
+    <!--This code below is for the timeline view presented on the website-->
 
+    <div class="timeline">
 
-        <div align="center"><h1>INTRODUCTION</h1></div>
-
-        <p align="center">
-            Introducing myself, I am Arshita Satsangee, a first year student pursuing my Major studies in Psychology and English from Dayalbagh Educational Institute, Agra, India.<br />
-            Being a national Table Tennis player and having an avid interest in various fields like adventure sports and travelling, my areas of interest also revolve <br />
-            around History, be it visiting historical monuments, reading historical books or watching Historical stage shows.For the next few years from now,
-            I have kept my options open considering getting into the field of Law or pursuing a Master's in psychology. <br />
-            The skill sets which I would like to acquire apart from excelling in academics are pottery-making and learning about the cultural diversities and cuisines.
-        </p>
-        <p align="center">
-            I am a backpacker and a gypsy soul looking to explore different landscapes. I live by the saying 'Carpe Diem'-Seize the Day (making the most of the day and most of life).<br />
-            The 3 precepts I live by are
-            Adhyayn ( ongoing learning and education).
-            Seva ( inculcating the spirit of selfless service and contributing to the community at large).
-            Vyayam ( a sound mind in a healthy body because only when we remain fit , we can serve others).
-        </p>
-
-
-
-
-
-
-
-        <!--This code below is for the timeline view presented on the website-->
-
-        <div class="timeline">
-
-            <div class="container right">
-                <div class="content">
-                    <h2>JULY  2018</h2>
-                    <p>Sophomore (2nd) Year in Faculty of Social Science, Dayalbagh Educational Institute begins.</p>
-                </div>
-            </div>
-
-
-
-            <div class="container left">
-                <div class="content">
-                    <h2>JUNE 2018</h2>
-                    <p>DEI-HKU STUDENT EXCHANGE PROGRAM. A visit to Hong Kong University, Hong Kong.</p>
-                </div>
-            </div>
-            <div class="container right">
-                <div class="content">
-                    <h2>JULY 2017</h2>
-                    <p>Freshman (1st) Year in Faculty of Social Science, Dayalbagh Educational Institute begins.</p>
-                </div>
-            </div>
-
-        </div>
-
-        <!--End of timeline-->
-        <!--For the 2 Text boxes-->
-
-
-        <div class="column">
-            <div class="card">
-                <h3><b>Sports</b></h3>
-                <p>Table-Tennis</p>
-
+        <div class="container right">
+            <div class="content">
+                <h2>JULY  2018</h2>
+                <p>Sophomore (2nd) Year in Faculty of Social Science, Dayalbagh Educational Institute begins.</p>
             </div>
         </div>
 
 
 
-        <div class="column">
-            <div class="card">
-                <h3><b>Hobbies</b></h3>
-                <p>History</p>
-                <p>Travelling</p>
-                <p>Adventure Sports</p>
-                <p>Table-Tennis</p>
-
+        <div class="container left">
+            <div class="content">
+                <h2>JUNE 2018</h2>
+                <p>DEI-HKU STUDENT EXCHANGE PROGRAM. A visit to Hong Kong University, Hong Kong.</p>
+            </div>
+        </div>
+        <div class="container right">
+            <div class="content">
+                <h2>JULY 2017</h2>
+                <p>Freshman (1st) Year in Faculty of Social Science, Dayalbagh Educational Institute begins.</p>
             </div>
         </div>
 
-        <footer class="footer">
-            <div class="copyright-section">
+    </div>
 
-                <div class="copytext">
-                    &copy; Aakash Baranwal. All rights reserved
+    <!--End of timeline-->
+    <!--For the 2 Text boxes-->
 
-                </div>
+
+    <div class="column">
+        <div class="card">
+            <h3><b>Sports</b></h3>
+            <p>Table-Tennis</p>
+
+        </div>
+    </div>
+
+
+
+    <div class="column">
+        <div class="card">
+            <h3><b>Hobbies</b></h3>
+            <p>History</p>
+            <p>Travelling</p>
+            <p>Adventure Sports</p>
+            <p>Table-Tennis</p>
+
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="copyright-section">
+
+            <div class="copytext">
+                &copy; Dayalbagh Educational Institute. All rights reserved                             <h6>Designed by Aakash Baranwal</h6>
 
             </div>
-            <!-- .copyright-section -->
-        </footer>
-        <!-- .footer -->
+
+        </div>
+        <!-- .copyright-section -->
+    </footer>
+    <!-- .footer -->
 
 </body>
 </html>
