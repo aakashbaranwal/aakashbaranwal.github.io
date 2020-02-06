@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Style the header */
+        header {
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 37px;
+            color: white;
+        }
+
+        /* Create two columns/boxes that floats next to each other */
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px; /* only for demonstration, should be removed */
+            background: #ccc;
+            padding: 20px;
+        }
+
+            /* Style the list inside the menu */
+            nav ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: 300px; /* only for demonstration, should be removed */
+        }
+
+        /* Clear floats after the columns */
+        section:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Style the footer */
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        @media (max-width: 600px) {
+            nav, article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+
+    <!--Slideshow-->
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Verdana, sans-serif;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+
+        /* Caption text */
+        .text {
+            color: #f2f2f2;
+            font-size: 17px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            height: 17px;
+            width: 17px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 70%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active {
+            background-color: #717171;
+        }
+
+        /* Fading animation */
+        . {
+            -webkit-animation-name: ;
+            -webkit-animation-duration: 1.7s;
+            animation-name: ;
+            animation-duration: 1.7s;
+        }
+
+        @-webkit-keyframes  {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes  {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+            .text {
+                font-size: 11px
+            }
+        }
+    </style>
+
+
+
+    <!--Prof Card-->
+
+
+    <style>
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 300px;
+            margin: auto;
+            text-align: center;
+            font-family: arial;
+        }
+
+        .title {
+            color: grey;
+            font-size: 18px;
+        }
+
+        button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 22px;
+            color: black;
+        }
+
+            button:hover, a:hover {
+                opacity: 0.7;
+            }
+    </style>
+
+    <style>
+        .card1 {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 300px;
+            margin: auto;
+            text-align: left;
+            font-family: arial;
+        }
+
+        .title {
+            color: grey;
+            font-size: 18px;
+        }
+
+        button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: left;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+        }
+    </style>
+
+    <style>
+        .responsive {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+
+	
+	<!--Trial-->
+	
+	<style>
+	* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* relevant styles */
+.img__wrap {
+  position: relative;
+  height: 200px;
+  width: 257px;
+}
+
+.img__description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(29, 106, 154, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+.img__wrap:hover .img__description {
+  visibility: visible;
+  opacity: 1;
+</style>
+	
+	
+
+
+<style>
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 30px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: red;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: blue;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #333;
+  text-align: center;
+
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.topnav a.active {
+  background-color: #333;
+  color: white;
+
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <h2 align="center" style="text-align:center; font-family:'Times New Roman'; color: white ">WINTER EXCHANGE PROGRAM</br>
+DAYALBAGH EDUCATIONAL INSTITUTE - THE UNIVERSITY OF HONG KONG</a></h2>
+</div>
+
+
+
+
+<div class="row">
+
+<div class="col-lg-2">
+ <a href="https://www.dei.ac.in/dei/" target="_blank">
+<img src="img1/1394441747Dayalbagh Educational Institute.png" align="left" style="width:100%;height:auto;margin:0 0 0 0"></a></div>
+
+    <div class="slideshow-container" style="width:65%;height:auto;margin:0 0 0 0;">
+
+        <div class="mySlides ">
+            <div class="numbertext">1 / 5</div>
+            <img src="img1/REI2.jpg" style="width:100%">
+            <div class="text">Dayalbagh Educational Institute</div>
+        </div>
+
+        <div class="mySlides ">
+            <div class="numbertext">2 / 5</div>
+            <img src="img1/DEI.png" style="width:100%">
+            <div class="text">DEI Central Office</div>
+        </div>
+
+        <div class="mySlides ">
+            <div class="numbertext">3 / 5</div>
+            <img src="img1/IMG_0983.jpg" style="width:100%">
+            <div class="text">DEI - HKU Group</div>
+        </div>
+
+
+        <div class="mySlides ">
+            <div class="numbertext">4 / 5</div>
+            <img src="img1/IMG_1181.jpg" style="width:100%">
+            <div class="text">Student's Group</div>
+        </div>
+
+
+
+        <div class="mySlides ">
+            <div class="numbertext">5 / 5</div>
+            <img src="img1/IMG_1196.jpg" style="width:100%">
+            <div class="text">Team</div>
+        </div>
+
+
+    </div>
+
+<div class="col-lg-2">
+<a href="https://hku.hk/" target="_blank">
+<img src="img1/hku.jpg"  style="width:100%;height:auto;margin:0 0 0 0"></a>
+</div>
+
+</div>
+
+<script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</script>
+
+
+
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+    </script>
+
+
+
+    <br /><br /><h2 style="font-family:'Times New Roman';text-align:center">DEI - HKU Winter Exchange - December 2018 - January 2019</h2><br /><br />
+
+
+
+    <div style="width:100%;height:auto;padding-right:15%;padding-left:15%;">
+        <h4 class="responsive">
+            
+            DEI-HKU Winter Experience program entitled “Sustainable Way of Life by Skill Development through Agriculture, Textiles and Yoga” was conducted in Dayalbagh from December 28, 2018 till January 2019. There were 9 students along with 1 teacher of HKU, who attended this program to broach this bilateral student exchange program. The major activities such as working in the Agricultural fields, doing Yoga and textile work were performed by the students together from both HKU and DEI, leading to the exchange of ideas on their understanding and perception of Dayalbagh through the first-person experience. In totality, the trip  was informative and a great learning opportunity for the young and brilliant students of both the institutes.
+            
+            </h4>
+        </div>
+    </br>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="img__wrap">
+                            <img class="img__img" src="img1/PremKalra(2).jpg" alt="P. K. Kalra" style="width:100%">
+                            <div class="container">
+                                <h1>
+                                    <p class="img__description">
+                                        <a href="https://www.dei.ac.in/dei/index.php?option=com_content&view=article&id=82:dei-director&catid=24:about-dei&Itemid=102" target="_blank">
+                                            Prof. P.K. Kalra</br>Director, DEI</br>Dayalbagh Educational Institute
+                                        </a>
+                                    <p>
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="img__wrap">
+                            <img class="img__img" src="img1/parul(1).jpg" alt="Parul Bhatnagar" style="width:100%">
+                            <div class="container">
+                                <h1>
+                                    <p class="img__description"><a href="https://www.dei.ac.in/dei/arts/index.php/faculty-staff/78-facultydrawing/72-asst-prof-parul-bhatnagar" target="_blank">Prof. Parul Bhatnagar</br>Professor Emeritus</br>Dayalbagh Educational Institute</a></p>
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="img__wrap">
+                            <img class="img__img" src="img1/nicol.jpg" alt="Pan Fu Chun Nicol" style="width:100%">
+                            <div class="container">
+                                <h1>
+                                    <p class="img__description"><a href="https://hk.linkedin.com/in/nicol-pan-4709a647" target="_blank">Prof. Pan Fu Chun Nicol</br>Associate Director, Common Core</br>The University of Hong Kong</a></p>
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="responsive">
+                            <br /><br />
+                            <h2 class="card1" style="text-align:center; font-family:'Times New Roman';">DEI Contingent</h2><br />
+                            <ol>
+                                <li>Aakash Baranwal (Faculty of Engineering)</li>
+                                <li>Adhar Sharma (Technical College)</li>
+                                <li>Arshita Satsangee (Faculty of Social Science)</li>
+                                <li>Chhabi Seth (Faculty of Arts)</li>
+                                <li>D. Guru Priya (Faculty of Social Science)</li>
+                                <li>Runjhun Bhatia (Faculty of Arts, B.Voc. Textile)</li>
+                                <li>Sneha Saxena (Faculty of Social Science)</li>
+                                <li>Sumiran Pullan (Faculty of Social Science)</li>
+                                <li>P. M. Niharika (Faculty of Arts)</li>
+                                <li>Rhea Nayyar (Faculty of Social Science)</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="responsive">
+                            <br /><br />
+                            <h2 class="card1" style="text-align:center; font-family:'Times New Roman';">HKU Contingent</h2><br />
+                            <ol>
+                                <li>Chan Ka Ching</li>
+                                <li>Hung Man Ho</li>
+                                <li>Reuven Juliet</li>
+                                <li>Kaur Charnjeet</li>
+                                <li>Lee Cheuk Him</li>
+                                <li>Li Hoi Ying</li>
+                                <li>Von Pflug Somphrattana Melitta</li>
+                                <li>Tam Tsz Ling</li>
+                                <li>Vu Ka Hei</li>
+                            </ol>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+			</p>
+			</p>
+			</h1>
+			</div>
+			</div>
+
+            <h3><a href="Gallery.html" target="_blank"><br>WINTER EXCHANGE PROGRAM : GALLERY</a></h3>
+
+            <footer class="footer">
+                <div class="copyright-section">
+                    <div class="copytext">
+                        &copy; Dayalbagh Educational Institute. All rights reserved
+                    </div>
+                </div>
+                <!-- .copyright-section -->
+            </footer>
+            <!-- .footer -->
+
+</body>
+</html>
